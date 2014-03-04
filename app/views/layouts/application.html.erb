@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>V</title>
+  <title>My Video House</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li><button type="button" class="btn btn-default">Movie</button></li>
+      <li><button type="button" class="btn btn-default">MV</button></li>
+      <li><button type="button" class="btn btn-default">Show</button></li>
+    </ul>
+</div>
 <%= yield %>
 
 </body>

@@ -1,4 +1,6 @@
 V::Application.routes.draw do
+  root to: 'home#index'
+  get "home/index"
   resources :videos
   get "admins/scan"
   get "admins/clean"

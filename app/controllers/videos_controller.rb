@@ -6,4 +6,7 @@ class VideosController < ApplicationController
     video = Video.find params[:id] || render(status: 404)
     redirect_to URI.escape( PREFIX + video.path )
   end
+
+
+
 end
