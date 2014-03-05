@@ -1,2 +1,22 @@
-<h1>Videos#show</h1>
-<p>Find me in app/views/videos/show.html.erb</p>
+<%= javascript_include_tag 'leanbackPlayer.pack' %>
+<%= javascript_include_tag 'leanbackPlayer.en' %>
+<%= stylesheet_link_tag 'leanbackPlayer.monochrome' %>
+
+<% require 'uri' %>
+<div class="pure-g">
+  <div class="pure-u-1 player">
+    <div class="leanback-player-video">
+      <video width="1280" height="720" preload="metadata" controls autoplay>
+        <source src="<%= URI.escape( VideosController::PREFIX + @video.path ) %>" type='video/webm; codecs="vp8, vorbis"'/>
+        <source src="<%= URI.escape( VideosController::PREFIX + @video.path ) %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+        <source src="<%= URI.escape( VideosController::PREFIX + @video.path ) %>" type='video/ogg; codecs="theora, vorbis"'/>
+      </video>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  document.title = '<%= @video.name %>';
+</script>
