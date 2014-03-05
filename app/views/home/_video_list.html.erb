@@ -1,0 +1,12 @@
+<div class="pure-g">
+  <div class="pure-u-1">
+    <% @videos.each do |video| %>
+        <div class="unit">
+          <%= link_to image_tag( image_url(video), class: 'small-cover' ), video, target: '_blank' %>
+          <div class="info">
+            <%= video.name %>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>

@@ -28,7 +28,7 @@ class AdminsController < ApplicationController
               video.group = group
               video.with_image = File.exist? "#{name}/#{video_name}.jpg"
               video.with_subtitle = File.exist? "#{name}/#{video_name}.srt"
-              video.categories << cate
+              video.categories << cate unless video.categories.include? cate
               video.save
             end
             next
@@ -42,7 +42,7 @@ class AdminsController < ApplicationController
           video.name = video_name
           video.with_image = File.exist? "#{video_name}.jpg"
           video.with_subtitle = File.exist? "#{video_name}.srt"
-          video.categories << cate
+          video.categories << cate unless video.categories.include? cate
           video.save
         end
       end
@@ -54,7 +54,10 @@ class AdminsController < ApplicationController
   end
 
   def clean
-    Video.all.each do |v|
+    Video.find_each do |v|
+      v.delete unless File.exist? File.join ROOT, v.path
+    end
+    Group.find_each do |v|
       v.delete unless File.exist? File.join ROOT, v.path
     end
     render nothing: true

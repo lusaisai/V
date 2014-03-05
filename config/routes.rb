@@ -2,6 +2,7 @@ V::Application.routes.draw do
   root to: 'home#index'
   get "home/index"
   resources :videos
+  resources :categories
   get "admins/scan"
   get "admins/clean"
   # The priority is based upon order of creation: first created -> highest priority.
