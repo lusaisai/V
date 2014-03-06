@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="526870b6-c3d5-437c-95b5-4883fb53b4b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.default.css" afterPath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.pack.js" afterPath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css" afterPath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/videos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="V.iws" />
@@ -59,28 +56,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="8" selection-start="981" selection-end="981" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leanbackPlayer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3261" column="11" selection-start="162885" selection-end="162892" vertical-scroll-proportion="-10.111111" vertical-offset="55164" max-vertical-offset="60163">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1394038908304" expanded="false" signature="43901:43919" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leanbackPlayer.monochrome.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="34" selection-start="12549" selection-end="12557" vertical-scroll-proportion="-10.111111" vertical-offset="3756" max-vertical-offset="7310">
+            <state line="27" column="31" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -95,20 +71,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="14" selection-start="991" selection-end="991" vertical-scroll-proportion="0.6738609" vertical-offset="424" max-vertical-offset="1258">
+            <state line="65" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="-29.0" vertical-offset="351" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js">
+      <file leaf-file-name="leanbackPlayer.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="25" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding />
+            <state line="3085" column="95" selection-start="153903" selection-end="153903" vertical-scroll-proportion="55.745686" vertical-offset="4002" max-vertical-offset="60163">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,6 +141,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/videos/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css" />
       </list>
     </option>
   </component>
@@ -174,7 +153,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="653" />
+    <option name="x" value="582" />
     <option name="width" value="1268" />
     <option name="height" value="1041" />
   </component>
@@ -771,7 +750,11 @@
       <created>1394057177200</created>
       <updated>1394057177200</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="subtitle, same-origin policy, utf8 encoding">
+      <created>1394065300251</created>
+      <updated>1394065300251</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -795,7 +778,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="653" y="0" width="1268" height="1041" extended-state="0" />
+    <frame x="582" y="0" width="1268" height="1041" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -837,7 +820,8 @@
     <MESSAGE value="using leanback player" />
     <MESSAGE value="fix leanback firefox mp4 issue" />
     <MESSAGE value="lazy load image" />
-    <option name="LAST_COMMIT_MESSAGE" value="lazy load image" />
+    <MESSAGE value="subtitle, same-origin policy, utf8 encoding" />
+    <option name="LAST_COMMIT_MESSAGE" value="subtitle, same-origin policy, utf8 encoding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1151,13 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="981" selection-end="981" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="26" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
@@ -1172,23 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3261" column="11" selection-start="162885" selection-end="162892" vertical-scroll-proportion="-10.111111" vertical-offset="55164" max-vertical-offset="60163">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1394038908304" expanded="false" signature="43901:43919" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="34" selection-start="12549" selection-end="12557" vertical-scroll-proportion="-10.111111" vertical-offset="3756" max-vertical-offset="7310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="25" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
@@ -1196,10 +1156,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="31" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="14" selection-start="991" selection-end="991" vertical-scroll-proportion="0.6738609" vertical-offset="424" max-vertical-offset="1258">
+        <state line="65" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="-29.0" vertical-offset="351" max-vertical-offset="1207">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="33" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.33293977" vertical-offset="7" max-vertical-offset="7310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3085" column="95" selection-start="153903" selection-end="153903" vertical-scroll-proportion="55.745686" vertical-offset="4002" max-vertical-offset="60163">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

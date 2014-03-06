@@ -9,7 +9,7 @@
         <source src="<%= URI.escape( prefix + @video.path ) %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
         <source src="<%= URI.escape( prefix + @video.path ) %>" type='video/ogg; codecs="theora, vorbis"'/>
         <% if @video.with_subtitle? %>
-            <track enabled="true" kind="subtitles" label="Chinese" srclang="en/ch" type="text/x-srt" src="/videos/subtitle/<%= @video.id %>"></track>
+            <track enabled="true" kind="subtitles" label="En/Ch" srclang="en/ch" type="text/x-srt" src="/videos/subtitle/<%= @video.id %>"></track>
         <% end %>
       </video>
     </div>

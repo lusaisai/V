@@ -280,7 +280,7 @@ body.h5_lb_iframe {
 	position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin-top: 0; margin-bottom: 0; color: #fff; text-align: center; display: none; z-index: 1000;
 }
 .h5_lb_player .h5_lb_subtitles .plain {
-	display: inline-block; position: absolute; top: auto; right: -1px; bottom: 44px; left: 1px; margin: 0; padding: 0; z-index: 1000;
+	display: inline-block; position: absolute; top: auto; right: -1px; bottom: 30px; left: 1px; margin: 0; padding: 0; z-index: 1000; font-size: 150%;
 }
 .h5_lb_player .h5_lb_subtitles .vtt {
 	position: absolute; font: 12px/1.231 arial, helvetica, sans-serif !important;
@@ -289,7 +289,7 @@ body.h5_lb_iframe {
 	display: inline-block; position: relative !important;
 }
 .h5_lb_player .h5_lb_subtitles .plain div {
-	display: inline-block; padding: 5px 10px; background: rgba(0,0,0,0.5); white-space: normal;
+	display: inline-block; padding: 5px 10px; background: rgba(0,0,0,0.5); white-space: normal; font-size: 150%;
 }
 .h5_lb_fullscreen  .h5_lb_subtitles .plain {font: 22px/1.231 arial, helvetica, sans-serif;}
 .h5_lb_smallscreen  .h5_lb_subtitles .plain {font: 12px/1.231 arial, helvetica, sans-serif;}
