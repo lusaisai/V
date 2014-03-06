@@ -5,16 +5,16 @@
  * This Software is part of LeanBack Player [HTML5 Media Player UI] by Ronny Mennerich
  * Copyright (c) 2010-2012 Ronny Mennerich <contact@leanbackplayer.com>
  *
- * LeanBack Player, in its open source version, is free software: 
+ * LeanBack Player, in its open source version, is free software:
  * you can redistribute it and/or modify it under the terms of the
  * GNU General Public License as published by the Free Software Foundation,
  * either version 3 of the License, or (at your option) any later version.
- * 
+ *
  * LeanBack Player is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with LeanBack Player. If not, see <http://www.leanbackplayer.com/license_gpl3.html/>.
  */

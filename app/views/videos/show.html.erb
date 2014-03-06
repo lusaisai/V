@@ -1,28 +1,35 @@
-
+<% prefix = 'http://localhost:8080/videos/' %>
 <% require 'uri' %>
+
 <div class="pure-g">
   <div class="pure-u-1 player">
     <div class="leanback-player-video">
       <video width="1280" height="720" preload="metadata" controls autoplay>
-        <source src="<%= URI.escape( VideosController::PREFIX + @video.path ) %>" type='video/webm; codecs="vp8, vorbis"'/>
-        <source src="<%= URI.escape( VideosController::PREFIX + @video.path ) %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
-        <source src="<%= URI.escape( VideosController::PREFIX + @video.path ) %>" type='video/ogg; codecs="theora, vorbis"'/>
+        <source src="<%= URI.escape( prefix + @video.path ) %>" type='video/webm; codecs="vp8, vorbis"'/>
+        <source src="<%= URI.escape( prefix + @video.path ) %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+        <source src="<%= URI.escape( prefix + @video.path ) %>" type='video/ogg; codecs="theora, vorbis"'/>
+        <% if @video.with_subtitle? %>
+            <track enabled="true" kind="subtitles" label="Chinese" srclang="en/ch" type="text/x-srt" src="/videos/subtitle/<%= @video.id %>"></track>
+        <% end %>
       </video>
     </div>
   </div>
 </div>
 
+<%= stylesheet_link_tag 'leanbackPlayer.monochrome' %>
 <%= javascript_include_tag 'leanbackPlayer' %>
 <%= javascript_include_tag 'leanbackPlayer.en' %>
-<%= stylesheet_link_tag 'leanbackPlayer.monochrome' %>
+
 
 
 <script>
-  document.title = '<%= @video.name %>';
-  LBP.options = {
-      hideControlsTimeout: 2,
-      volumeRates: 10,
-      defaultVolume: 8,
-      seekSkipSec: 5
-  }
+    document.title = '<%= @video.name %>';
+    LBP.options = {
+        hideControlsTimeout: 2,
+        volumeRates: 10,
+        defaultVolume: 8,
+        seekSkipSec: 5,
+        showSubtitles: true
+    }
 </script>
+
