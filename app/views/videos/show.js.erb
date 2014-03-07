@@ -15,5 +15,16 @@
         $('.overlay').fadeOut('slow', function(){$(this).remove()});
     });
 
+    $('video').bind( 'error', function(){ // try to replay it in case of errors
+        var time = this.currentTime;
+        this.load();
+        this.play();
+        $(this).bind( 'canplay', function(){
+            this.currentTime = time;
+            $(this).unbind('canplay');
+        } );
+
+    } );
+
 })();
 

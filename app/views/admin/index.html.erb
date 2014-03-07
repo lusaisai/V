@@ -1,0 +1,16 @@
+<div class="pure-g">
+  <div class="pure-u-1-5">
+    <%= button_to 'SCAN Videos', admin_scan_path, class: 'pure-button pure-button-primary', remote: true  %>
+    <%= button_to 'Clean Up', admin_clean_path, class: 'pure-button pure-button-primary', remote: true  %>
+  </div>
+  <div class="pure-u-4-5">
+    <ol>
+      <li id="scan"></li><br/>
+      <li id="clean"></li>
+    </ol>
+  </div>
+</div>
+<script>
+  $('form').submit(function(){ $(this).find('input').prop("disabled", true ); })
+  $(document).ajaxSuccess(function(){ $(this).find('input').prop("disabled", false ); })
+</script>

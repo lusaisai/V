@@ -4,8 +4,9 @@ V::Application.routes.draw do
   resources :videos
   get "videos/subtitle/:id" => 'videos#subtitle'
   resources :categories
-  get "admins/scan"
-  get "admins/clean"
+  get "admin" => 'admin#index'
+  post "admin/scan"
+  post "admin/clean"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
