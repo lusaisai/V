@@ -2,7 +2,7 @@
   <div class="pure-u-1">
     <% @videos.each do |video| %>
         <div class="unit">
-          <a href="/videos/<%= video.id %>" target="_blank">
+          <a href="/videos/<%= video.id %>" data-remote="true">
             <img class="small-cover lazy" data-original="<%= image_url(video) %>">
           </a>
           <div class="info">

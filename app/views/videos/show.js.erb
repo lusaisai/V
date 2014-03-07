@@ -1,0 +1,20 @@
+(function() {
+
+    var JBody = $('body');
+
+    JBody.append('<div class="overlay"></div>');
+
+    $('body').append(
+        "<%= escape_javascript(render file: 'videos/show.html.erb') %>"
+    );
+
+    LBP.init();
+
+    $('.overlay').click(function(){
+        $('.player').fadeOut('slow', function(){$(this).remove()});
+        $('.overlay').fadeOut('slow', function(){$(this).remove()});
+    });
+
+})();
+
+

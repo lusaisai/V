@@ -29,6 +29,7 @@ class AdminsController < ApplicationController
               video.with_image = File.exist? "#{name}/#{video_name}.jpg"
               video.with_subtitle = File.exist? "#{name}/#{video_name}.srt"
               video.categories << cate unless video.categories.include? cate
+              video.set_width_height
               video.save
             end
             next
@@ -43,6 +44,7 @@ class AdminsController < ApplicationController
           video.with_image = File.exist? "#{video_name}.jpg"
           video.with_subtitle = File.exist? "#{video_name}.srt"
           video.categories << cate unless video.categories.include? cate
+          video.set_width_height
           video.save
         end
       end
