@@ -1,11 +1,12 @@
 (function() {
+    $('.overlay').remove();
+    $('.player').remove();
+
     var JBody = $('body');
 
     JBody.append('<div class="overlay"></div>');
 
-    JBody.append(
-            "<%= escape_javascript(render file: 'videos/show.html.erb') %>"
-    );
+    JBody.append("<%= escape_javascript(render 'show') %>");
 
     LBP.options = {
         hideControlsTimeout: 2,
@@ -20,7 +21,7 @@
     var left = ( $(window).width() - <%= @video.width %> ) / 2 ;
     JPlayer.css( 'top', top );
     JPlayer.css( 'left', left );
-    JPlayer.fadeIn(1500);
+    JPlayer.fadeIn('slow');
 
     var JOverlay = $('.overlay');
     JOverlay.click(function(){
@@ -29,6 +30,9 @@
     });
 
     JOverlay.height(JBody.height());
+    JOverlay.fadeIn('slow');
+
+
 
     LBP.init();
 

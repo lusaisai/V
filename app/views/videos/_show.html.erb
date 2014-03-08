@@ -9,9 +9,9 @@
         <% end %>
       </video>
     </div>
+  <% if ! @video.group_id.nil? %>
+  <%= render 'list' %>
+  <% end %>
 </div>
 
 
-<%= stylesheet_link_tag 'leanbackPlayer.monochrome' %>
-<%= javascript_include_tag 'leanbackPlayer' %>
-<%= javascript_include_tag 'leanbackPlayer.en' %>

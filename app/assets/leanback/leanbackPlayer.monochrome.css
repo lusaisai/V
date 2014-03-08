@@ -30,7 +30,7 @@ body.h5_lb_iframe {
 /*******************/
 /* LeanBack Player */
 .h5_lb_player {cursor: pointer; direction: ltr;}
-.h5_lb_player .h5_lb_video {border: 1px solid #555; background: #000; cursor: pointer; z-index: 1000; outline: 0;}
+.h5_lb_player .h5_lb_video {/*border: 1px solid #555;*/ background: #000; cursor: pointer; z-index: 1000; outline: 0;}
 .h5_lb_player .h5_lb_audio {cursor: pointer; outline: 0;}
 .h5_lb_player audio {display: none !important;}
 .h5_lb_smallscreen {position: relative; margin: auto; text-align: center;}

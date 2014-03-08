@@ -1,0 +1,16 @@
+<div class="playlist">
+  <% @video.group.videos.each do |video| %>
+      <% if video.id == @video.id %>
+        <div class="current"><%= link_to video.name, video, remote: true %></div>
+      <% else %>
+        <div><%= link_to video.name, video, remote: true %></div>
+      <% end %>
+  <% end %>
+</div>
+<script>
+  $('.playlist').animate({opacity: 0},800);
+  $('.playlist').hover(
+          function(){$('.playlist').animate({opacity: 0.8},800);},
+          function(){$('.playlist').animate({opacity: 0},800);}
+  );
+</script>

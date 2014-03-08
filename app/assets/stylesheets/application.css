@@ -10,5 +10,6 @@
  *
  *= require_self
  *= require pure-min
+ *= require leanbackPlayer.monochrome
  *= require_tree .
  */
