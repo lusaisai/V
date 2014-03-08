@@ -43,8 +43,9 @@ class AdminController < ApplicationController
     return unless is_video(path)
     video = Video.find_or_create_by path: path
     video.name = File.basename(path).sub /\.[^.]*$/, ''
-    video.with_image = File.exist? video.file_image
-    video.with_subtitle = File.exist? video.file_subtitle
+    video.with_image = File.exist? video.image_file
+    video.ass2srt
+    video.with_subtitle = File.exist? video.subtitle_file
     video.categories << category unless video.categories.include? category
     video.group = group
     video.set_width_height
