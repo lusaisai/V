@@ -2666,7 +2666,7 @@ LBP.prototype.setPlayerInFocus = function(vid) {
 			el = el.offsetParent;
 		}
 		/* do: scroll to focused player */
-		window.scrollTo(selectedPosX, selectedPosY - top);
+//		window.scrollTo(selectedPosX, selectedPosY - top);
 	}
 };
 /* fct: try to find next suitable video player */

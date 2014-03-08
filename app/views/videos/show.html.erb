@@ -1,4 +1,4 @@
-<div class="player" style="display: none">
+<div class="player">
     <div class="leanback-player-video">
       <video width="<%= @video.width %>" height="<%= @video.height %>" preload="auto" controls autoplay>
         <source src="<%= @video.url %>" type='video/webm; codecs="vp8, vorbis"'/>
@@ -15,16 +15,3 @@
 <%= stylesheet_link_tag 'leanbackPlayer.monochrome' %>
 <%= javascript_include_tag 'leanbackPlayer' %>
 <%= javascript_include_tag 'leanbackPlayer.en' %>
-
-
-<script>
-    LBP.options = {
-        hideControlsTimeout: 2,
-        volumeRates: 10,
-        defaultVolume: 8,
-        seekSkipSec: 5,
-        showSubtitles: true
-    };
-    $('.player').fadeIn(1500);
-</script>
-
