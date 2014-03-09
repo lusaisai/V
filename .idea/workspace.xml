@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="526870b6-c3d5-437c-95b5-4883fb53b4b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/V.iml" afterPath="$PROJECT_DIR$/.idea/V.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/_show.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/_show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/clean.js.erb" afterPath="$PROJECT_DIR$/app/views/admin/clean.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/group.rb" afterPath="$PROJECT_DIR$/app/models/group.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/scan.js.erb" afterPath="$PROJECT_DIR$/app/views/admin/scan.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/video.rb" afterPath="$PROJECT_DIR$/app/models/video.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/videos_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/videos_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js" afterPath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js" afterPath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.js.erb" afterPath="$PROJECT_DIR$/app/views/videos/show.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="V.iws" />
@@ -28,11 +21,11 @@
     <SUITE FILE_PATH="coverage/V@test_should_get_clean__V.coverage" NAME="test_should_get_clean: V Coverage Results" MODIFIED="1393953718525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@test_should_get_scan__V.coverage" NAME="test_should_get_scan: V Coverage Results" MODIFIED="1394186634031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@Run_test__admins_controller_test___V.coverage" NAME="Run test 'admins_controller_test': V Coverage Results" MODIFIED="1393952824739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
-    <SUITE FILE_PATH="coverage/V@Development__V.coverage" NAME="Development: V Coverage Results" MODIFIED="1394319559249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
+    <SUITE FILE_PATH="coverage/V@Development__V.coverage" NAME="Development: V Coverage Results" MODIFIED="1394353316587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@Production__V.coverage" NAME="Production: V Coverage Results" MODIFIED="1394209603321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@assets_precompile__V.coverage" NAME="assets:precompile: V Coverage Results" MODIFIED="1394225477414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
-    <SUITE FILE_PATH="coverage/V@db_setup__V.coverage" NAME="db:setup: V Coverage Results" MODIFIED="1394315887880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@db_migrate.coverage" NAME="db:migrate Coverage Results" MODIFIED="1394186842375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
+    <SUITE FILE_PATH="coverage/V@db_setup__V.coverage" NAME="db:setup: V Coverage Results" MODIFIED="1394315887880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@Rails_console__V.coverage" NAME="Rails console: V Coverage Results" MODIFIED="1394314284950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -51,9 +44,7 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="75" column="1" selection-start="1222" selection-end="1222" vertical-scroll-proportion="-9.846154" vertical-offset="1019" max-vertical-offset="1853">
-              <folding>
-                <marker date="1394313610667" expanded="true" signature="1641:1677" placeholder="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,37 +58,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videos_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/videos_helper.rb">
+      <file leaf-file-name="leanbackPlayer.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state line="992" column="18" selection-start="47764" selection-end="47764" vertical-scroll-proportion="0.1724138" vertical-offset="16769" max-vertical-offset="60163">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1394357124928" expanded="false" signature="43903:43921" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leanbackPlayer.monochrome.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="155" column="43" selection-start="7916" selection-end="7923" vertical-scroll-proportion="-6.9259257" vertical-offset="2448" max-vertical-offset="7310">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="leanbackPlayer.en.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="45" selection-start="1776" selection-end="1777" vertical-scroll-proportion="-6.9259257" vertical-offset="527" max-vertical-offset="1224">
+              <folding>
+                <marker date="1394356621511" expanded="false" signature="1400:1418" placeholder="..." />
+                <marker date="1394356621511" expanded="false" signature="1618:1636" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/video.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="9" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.25" vertical-offset="721" max-vertical-offset="1530">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="50" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.log" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/development.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49739" column="62" selection-start="2500504" selection-end="2500504" vertical-scroll-proportion="0.0" vertical-offset="845240" max-vertical-offset="845750">
+            <state line="61" column="37" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -143,7 +140,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/bin/start_up.bat" />
         <option value="$PROJECT_DIR$/app/views/home/_category_nav.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js" />
         <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.ext.invideoplaylist.pack.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/videos/show.html.erb" />
@@ -151,7 +147,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css" />
         <option value="$PROJECT_DIR$/app/views/videos/_list.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/videos/show.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/_video_list.html.erb" />
@@ -165,6 +160,9 @@
         <option value="$PROJECT_DIR$/app/views/admin/clean.js.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
+        <option value="$PROJECT_DIR$/app/views/videos/show.js.erb" />
+        <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js" />
+        <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js" />
       </list>
     </option>
   </component>
@@ -206,7 +204,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -578,6 +575,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -853,9 +851,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:setup: V" />
-        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: V" />
-        <item index="2" class="java.lang.String" itemvalue="Rake.assets:precompile: V" />
+        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: V" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.assets:precompile: V" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:setup: V" />
         <item index="3" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_should_get_scan: V" />
       </list>
@@ -937,7 +935,11 @@
       <created>1394306519405</created>
       <updated>1394306519405</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="convert ass to srt">
+      <created>1394322325255</created>
+      <updated>1394322325255</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -964,25 +966,25 @@
     <frame x="656" y="0" width="1268" height="1041" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23471074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23801653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39493948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32233223" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958678" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933994" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958678" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1010,7 +1012,8 @@
     <MESSAGE value="set simple admin page" />
     <MESSAGE value="set overlay size and position" />
     <MESSAGE value="add playlist feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="add playlist feature" />
+    <MESSAGE value="convert ass to srt" />
+    <option name="LAST_COMMIT_MESSAGE" value="convert ass to srt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1057,16 +1060,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304150019_create_categories.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="61" selection-end="61" vertical-scroll-proportion="0.02910959" vertical-offset="0" max-vertical-offset="584">
-          <folding />
-        </state>
+        <state line="1" column="12" selection-start="61" selection-end="61" vertical-scroll-proportion="0.02910959" vertical-offset="0" max-vertical-offset="584" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304150136_create_groups.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="57" selection-end="57" vertical-scroll-proportion="0.02910959" vertical-offset="0" max-vertical-offset="584">
-          <folding />
-        </state>
+        <state line="1" column="12" selection-start="57" selection-end="57" vertical-scroll-proportion="0.02910959" vertical-offset="0" max-vertical-offset="584" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304150538_create_categories_videos.rb">
@@ -1101,11 +1100,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="849" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140307090746_add_width_and_height_to_videos.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.20523138" vertical-offset="0" max-vertical-offset="497">
@@ -1137,23 +1131,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="56" selection-start="124" selection-end="124" vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="572">
-          <folding />
-        </state>
+        <state line="4" column="56" selection-start="124" selection-end="124" vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="206" selection-end="269" vertical-scroll-proportion="0.02972028" vertical-offset="85" max-vertical-offset="1462">
-          <folding />
-        </state>
+        <state line="6" column="17" selection-start="206" selection-end="269" vertical-scroll-proportion="0.02972028" vertical-offset="85" max-vertical-offset="1462" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
@@ -1187,76 +1175,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.1271028" vertical-offset="0" max-vertical-offset="535">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.1271028" vertical-offset="0" max-vertical-offset="535" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="605" selection-end="605" vertical-scroll-proportion="0.29651162" vertical-offset="0" max-vertical-offset="860">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="605" selection-end="605" vertical-scroll-proportion="0.29651162" vertical-offset="0" max-vertical-offset="860" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="47" selection-start="428" selection-end="428" vertical-scroll-proportion="0.25325885" vertical-offset="0" max-vertical-offset="537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="1" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.3581818" vertical-offset="160" max-vertical-offset="7310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="867" column="75" selection-start="40556" selection-end="40556" vertical-scroll-proportion="-56.976364" vertical-offset="46076" max-vertical-offset="60163">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="8" column="47" selection-start="428" selection-end="428" vertical-scroll-proportion="0.25325885" vertical-offset="0" max-vertical-offset="537" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.3549884" vertical-offset="0" max-vertical-offset="862">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/show.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="15" selection-start="914" selection-end="914" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
+        <state line="18" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.3549884" vertical-offset="0" max-vertical-offset="862" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2978972" vertical-offset="0" max-vertical-offset="856">
-          <folding />
-        </state>
+        <state line="15" column="9" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2978972" vertical-offset="0" max-vertical-offset="856" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.4071856" vertical-offset="0" max-vertical-offset="501">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.4071856" vertical-offset="0" max-vertical-offset="501" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_video_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="73" selection-start="221" selection-end="221" vertical-scroll-proportion="0.1431579" vertical-offset="0" max-vertical-offset="475">
-          <folding />
-        </state>
+        <state line="4" column="73" selection-start="221" selection-end="221" vertical-scroll-proportion="0.1431579" vertical-offset="0" max-vertical-offset="475" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/_show.html.erb">
@@ -1268,18 +1217,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="128" selection-end="262" vertical-scroll-proportion="0.23752496" vertical-offset="0" max-vertical-offset="501">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="1" selection-start="1222" selection-end="1222" vertical-scroll-proportion="-9.846154" vertical-offset="1019" max-vertical-offset="1853">
-          <folding>
-            <marker date="1394313610667" expanded="true" signature="1641:1677" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="7" column="42" selection-start="128" selection-end="262" vertical-scroll-proportion="0.23752496" vertical-offset="0" max-vertical-offset="501" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/group.rb">
@@ -1289,51 +1227,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/scan.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.031716418" vertical-offset="0" max-vertical-offset="536" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clean.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.031716418" vertical-offset="0" max-vertical-offset="536" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/home_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="47" selection-start="547" selection-end="547" vertical-scroll-proportion="0.3575526" vertical-offset="0" max-vertical-offset="523" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49739" column="62" selection-start="2500504" selection-end="2500504" vertical-scroll-proportion="0.0" vertical-offset="845240" max-vertical-offset="845750">
+        <state line="52720" column="62" selection-start="2747896" selection-end="2747896" vertical-scroll-proportion="0.70437956" vertical-offset="895854" max-vertical-offset="896427">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/videos_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/videos/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+        <state line="9" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.27321428" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="50" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+        <state line="15" column="40" selection-start="636" selection-end="636" vertical-scroll-proportion="0.43515357" vertical-offset="0" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/scan.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.031716418" vertical-offset="0" max-vertical-offset="536">
+        <state line="61" column="37" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/clean.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/videos_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.031716418" vertical-offset="0" max-vertical-offset="536">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/home_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="47" selection-start="547" selection-end="547" vertical-scroll-proportion="0.3575526" vertical-offset="0" max-vertical-offset="523">
+        <state line="5" column="18" selection-start="129" selection-end="129" vertical-scroll-proportion="0.1450512" vertical-offset="0" max-vertical-offset="586">
           <folding />
         </state>
       </provider>
@@ -1345,10 +1289,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="9" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.25" vertical-offset="721" max-vertical-offset="1530">
+        <state line="155" column="43" selection-start="7916" selection-end="7923" vertical-scroll-proportion="-6.9259257" vertical-offset="2448" max-vertical-offset="7310">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="1" selection-start="1222" selection-end="1222" vertical-scroll-proportion="-9.846154" vertical-offset="1019" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="45" selection-start="1776" selection-end="1777" vertical-scroll-proportion="-6.9259257" vertical-offset="527" max-vertical-offset="1224">
+          <folding>
+            <marker date="1394356621511" expanded="false" signature="1400:1418" placeholder="..." />
+            <marker date="1394356621511" expanded="false" signature="1618:1636" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="992" column="18" selection-start="47764" selection-end="47764" vertical-scroll-proportion="0.1724138" vertical-offset="16769" max-vertical-offset="60163">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1394357124928" expanded="false" signature="43903:43921" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

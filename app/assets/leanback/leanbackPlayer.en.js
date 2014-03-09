@@ -32,19 +32,21 @@
 	EmbedURLTitle: "Copy backling url of page",
 	EmbedCodeTxt: "Copy the code above to integrate to your page.",
 	/* for LeanBack Player information element and window */
-	Info_title: "Show LeanBack Player information",
+	Info_title: "Based on LeanBack Player version 0.8.0.93",
 	Info_menu_about: "About",
 	Info_menu_shortcuts: "Shortcuts",
-	Info_content_default_player: "<span style=\"font-weight: bold;\"><a href=\"$0\" onclick=\"window.open(this.href); return false;\">LeanBack Player<\/a><\/span>: Version $1",
+//	Info_content_default_player: "<span style=\"font-weight: bold;\"><a href=\"$0\" onclick=\"window.open(this.href); return false;\">LeanBack Player<\/a><\/span>: Version $1",
+	Info_content_default_player: "",
 	Info_content_default_exts: "<br\/><br\/><span style=\"font-weight: bold;\">active Extension(s)<\/span>",
-	Info_content_version: "Version $0",
+	Info_content_version: "",
+//	Info_content_version: "Version $0",
 	Info_content_exts_url_visit: "Visit developer website",
 	/* for about button on information window */
 	About_headline: "General Information",
 	/* for shortcut button and content on information window */
 	Shortcuts_headline: "Overview of keyboard shortcuts",
 	Shortcuts_content: {
-		"info": "Show/hide player information <button class=\"keys\">i<\/button>",
+//		"info": "Show/hide player information <button class=\"keys\">i<\/button>",
 		"play_pause_stop": "Play <button class=\"keys\">space<\/button>, Pause <button class=\"keys\">space<\/button>, Stop <button class=\"keys\">s<\/button>",
 		"volume": "Increase volume <button class=\"keys\">&darr;<\/button>, decrease volume <button class=\"keys\">&uarr;<\/button>",
 		"mute": "Mute volume <button class=\"keys\">LEFT CTRL<\/button> + <button class=\"keys\">&darr;<\/button>, unmute volume <button class=\"keys\">LEFT CTRL<\/button> + <button class=\"keys\">&uarr;<\/button>",

@@ -17,18 +17,24 @@
     };
 
     var JPlayer = $('.player');
-    var top = ( $(window).height() - <%= @video.height %> ) / 2 ;
-    var left = ( $(window).width() - <%= @video.width %> ) / 2 ;
-    JPlayer.css( 'top', top );
-    JPlayer.css( 'left', left );
+
+    var placePlayer = function() {
+        var top = ( $(window).height() - <%= @video.height %> ) / 2 ;
+        var left = ( $(window).width() - <%= @video.width %> ) / 2 ;
+        JPlayer.css( 'top', top );
+        JPlayer.css( 'left', left );
+    }
+    placePlayer();
     JPlayer.fadeIn('slow');
+    $( window ).resize(function() {
+        placePlayer();
+    });
 
     var JOverlay = $('.overlay');
     JOverlay.click(function(){
         JPlayer.fadeOut('slow', function(){$(this).remove()});
         JOverlay.fadeOut('slow', function(){$(this).remove()});
     });
-
     JOverlay.height(JBody.height());
     JOverlay.fadeIn('slow');
 
