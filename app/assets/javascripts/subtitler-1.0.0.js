@@ -118,7 +118,6 @@
     };
 
     var setHtml = function (self, text) {
-        console.log(text);
         var subdiv = document.getElementById(self.divId);
         if ( text ) {
             subdiv.innerHTML = text;
