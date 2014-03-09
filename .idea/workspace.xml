@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="526870b6-c3d5-437c-95b5-4883fb53b4b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js" afterPath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js" afterPath="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/video_shortcuts.js" />
+      <change type="DELETED" beforePath="D:\RubymineProjects\V\app\assets\leanback\leanbackPlayer.en.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\RubymineProjects\V\app\assets\leanback\leanbackPlayer.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\RubymineProjects\V\app\assets\leanback\leanbackPlayer.monochrome.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/_show.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/_show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.js.erb" afterPath="$PROJECT_DIR$/app/views/videos/show.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,7 +48,7 @@
       <file leaf-file-name="home.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="1" selection-start="1222" selection-end="1222" vertical-scroll-proportion="-9.846154" vertical-offset="1019" max-vertical-offset="1853">
+            <state line="104" column="0" selection-start="1722" selection-end="1722" vertical-scroll-proportion="-16.692308" vertical-offset="1334" max-vertical-offset="1887">
               <folding />
             </state>
           </provider>
@@ -58,43 +63,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leanbackPlayer.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
+      <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/video.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="992" column="18" selection-start="47764" selection-end="47764" vertical-scroll-proportion="0.1724138" vertical-offset="16769" max-vertical-offset="60163">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1394357124928" expanded="false" signature="43903:43921" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leanbackPlayer.monochrome.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="43" selection-start="7916" selection-end="7923" vertical-scroll-proportion="-6.9259257" vertical-offset="2448" max-vertical-offset="7310">
+            <state line="53" column="5" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leanbackPlayer.en.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="45" selection-start="1776" selection-end="1777" vertical-scroll-proportion="-6.9259257" vertical-offset="527" max-vertical-offset="1224">
+            <state line="18" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding>
-                <marker date="1394356621511" expanded="false" signature="1400:1418" placeholder="..." />
-                <marker date="1394356621511" expanded="false" signature="1618:1636" placeholder="..." />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="37" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1530">
+            <state line="11" column="20" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="23" selection-start="322" selection-end="322" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/videos/show.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="30" selection-start="1063" selection-end="1063" vertical-scroll-proportion="-25.192308" vertical-offset="8" max-vertical-offset="952">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video_shortcuts.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/video_shortcuts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="30" selection-start="869" selection-end="869" vertical-scroll-proportion="0.6049822" vertical-offset="204" max-vertical-offset="850">
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/videos/_show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="33" selection-start="636" selection-end="636" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
@@ -141,9 +171,7 @@
         <option value="$PROJECT_DIR$/app/bin/start_up.bat" />
         <option value="$PROJECT_DIR$/app/views/home/_category_nav.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.ext.invideoplaylist.pack.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/videos/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css" />
         <option value="$PROJECT_DIR$/app/views/videos/_list.html.erb" />
@@ -152,17 +180,21 @@
         <option value="$PROJECT_DIR$/app/views/home/_video_list.html.erb" />
         <option value="$PROJECT_DIR$/app/models/group.rb" />
         <option value="$PROJECT_DIR$/app/helpers/videos_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/videos/_show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/scan.js.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/clean.js.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
-        <option value="$PROJECT_DIR$/app/views/videos/show.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js" />
         <option value="$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/video_helper.js" />
+        <option value="$PROJECT_DIR$/app/views/videos/_show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/videos/show.js.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/video_shortcuts.js" />
       </list>
     </option>
   </component>
@@ -485,51 +517,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leanback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -939,7 +931,11 @@
       <created>1394322325255</created>
       <updated>1394322325255</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="remove annoying lbp info">
+      <created>1394357277046</created>
+      <updated>1394357277046</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -964,8 +960,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="656" y="0" width="1268" height="1041" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -975,13 +972,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39493948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32233223" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933994" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958678" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1013,7 +1009,8 @@
     <MESSAGE value="set overlay size and position" />
     <MESSAGE value="add playlist feature" />
     <MESSAGE value="convert ass to srt" />
-    <option name="LAST_COMMIT_MESSAGE" value="convert ass to srt" />
+    <MESSAGE value="remove annoying lbp info" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove annoying lbp info" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1060,12 +1057,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304150019_create_categories.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="61" selection-end="61" vertical-scroll-proportion="0.02910959" vertical-offset="0" max-vertical-offset="584" />
+        <state line="1" column="12" selection-start="61" selection-end="61" vertical-scroll-proportion="0.02910959" vertical-offset="0" max-vertical-offset="584">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304150136_create_groups.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="57" selection-end="57" vertical-scroll-proportion="0.02910959" vertical-offset="0" max-vertical-offset="584" />
+        <state line="1" column="12" selection-start="57" selection-end="57" vertical-scroll-proportion="0.02910959" vertical-offset="0" max-vertical-offset="584">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304150538_create_categories_videos.rb">
@@ -1178,24 +1179,11 @@
         <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.1271028" vertical-offset="0" max-vertical-offset="535" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="605" selection-end="605" vertical-scroll-proportion="0.29651162" vertical-offset="0" max-vertical-offset="860" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="47" selection-start="428" selection-end="428" vertical-scroll-proportion="0.25325885" vertical-offset="0" max-vertical-offset="537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.3549884" vertical-offset="0" max-vertical-offset="862" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2978972" vertical-offset="0" max-vertical-offset="856" />
+        <state line="15" column="9" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2978972" vertical-offset="0" max-vertical-offset="856">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
@@ -1206,13 +1194,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/home/_video_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="73" selection-start="221" selection-end="221" vertical-scroll-proportion="0.1431579" vertical-offset="0" max-vertical-offset="475" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/_show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.62554115" vertical-offset="0" max-vertical-offset="462">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
@@ -1254,23 +1235,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/show.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.27321428" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="40" selection-start="636" selection-end="636" vertical-scroll-proportion="0.43515357" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="37" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
@@ -1289,36 +1256,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.monochrome.css">
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="43" selection-start="7916" selection-end="7923" vertical-scroll-proportion="-6.9259257" vertical-offset="2448" max-vertical-offset="7310">
+        <state line="53" column="5" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="20" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="322" selection-end="322" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/videos/_show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="636" selection-end="636" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="1" selection-start="1222" selection-end="1222" vertical-scroll-proportion="-9.846154" vertical-offset="1019" max-vertical-offset="1853">
+        <state line="104" column="0" selection-start="1722" selection-end="1722" vertical-scroll-proportion="-16.692308" vertical-offset="1334" max-vertical-offset="1887">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.en.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="45" selection-start="1776" selection-end="1777" vertical-scroll-proportion="-6.9259257" vertical-offset="527" max-vertical-offset="1224">
+        <state line="18" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
           <folding>
-            <marker date="1394356621511" expanded="false" signature="1400:1418" placeholder="..." />
-            <marker date="1394356621511" expanded="false" signature="1618:1636" placeholder="..." />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/leanback/leanbackPlayer.js">
+    <entry file="file://$PROJECT_DIR$/app/views/videos/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="992" column="18" selection-start="47764" selection-end="47764" vertical-scroll-proportion="0.1724138" vertical-offset="16769" max-vertical-offset="60163">
+        <state line="39" column="30" selection-start="1063" selection-end="1063" vertical-scroll-proportion="-25.192308" vertical-offset="8" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/video_shortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="30" selection-start="869" selection-end="869" vertical-scroll-proportion="0.6049822" vertical-offset="204" max-vertical-offset="850">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1394357124928" expanded="false" signature="43903:43921" placeholder="..." />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>

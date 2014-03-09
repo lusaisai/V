@@ -1,17 +1,14 @@
-<div class="player">
-    <div class="leanback-player-video">
+<div id="player" class="player">
       <video width="<%= @video.width %>" height="<%= @video.height %>" preload="auto" controls autoplay>
         <source src="<%= @video.url %>" type='video/webm; codecs="vp8, vorbis"'/>
         <source src="<%= @video.url %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
         <source src="<%= @video.url %>" type='video/ogg; codecs="theora, vorbis"'/>
-        <% if @video.with_subtitle? %>
-            <track enabled="true" kind="subtitles" label="En/Ch" srclang="en/ch" type="text/x-srt" src="<%= @video.subtitle_url %>"></track>
+        <% if @video.with_subtitle? && false %>
+            <track kind="subtitles" label="En/Ch" srclang="en/ch" type="text/x-srt" src="<%= @video.subtitle_url %>"></track>
         <% end %>
       </video>
-    </div>
   <% if ! @video.group_id.nil? %>
   <%= render 'list' %>
   <% end %>
 </div>
-
 

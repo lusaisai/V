@@ -1,22 +1,29 @@
 (function() {
-    $('.overlay').remove();
-    $('.player').remove();
+    // handle original player if there's one
+    try {
+        $('#overlay').remove();
+        $('video')[0].src = '';
+        $('#player').remove();
+    } catch(e) {
+
+    }
+    // handle click on overlay
+    var removePlayer = function(){
+            $('#overlay').fadeOut('slow', function(){$(this).remove();});
+            $('#player').fadeOut('slow', function(){
+                $('video')[0].src = '';
+                $(this).remove();
+            });
+    };
+
 
     var JBody = $('body');
 
-    JBody.append('<div class="overlay"></div>');
+    JBody.append('<div id="overlay" class="overlay"></div>');
 
     JBody.append("<%= escape_javascript(render 'show') %>");
 
-    LBP.options = {
-        hideControlsTimeout: 2,
-        volumeRates: 10,
-        defaultVolume: 8,
-        seekSkipSec: 5,
-        showSubtitles: true
-    };
-
-    var JPlayer = $('.player');
+    var JPlayer = $('#player');
 
     var placePlayer = function() {
         var top = ( $(window).height() - <%= @video.height %> ) / 2 ;
@@ -30,17 +37,14 @@
         placePlayer();
     });
 
-    var JOverlay = $('.overlay');
-    JOverlay.click(function(){
-        JPlayer.fadeOut('slow', function(){$(this).remove()});
-        JOverlay.fadeOut('slow', function(){$(this).remove()});
-    });
-    JOverlay.height(JBody.height());
-    JOverlay.fadeIn('slow');
+    var video = $('video')[0];
+    video.volume = 0.8;
 
 
+    $('#overlay').height(JBody.height());
+    $('#overlay').fadeIn('slow');
+    $('#overlay').click(removePlayer);
 
-    LBP.init();
 
 })();
 
