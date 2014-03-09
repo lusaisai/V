@@ -3,12 +3,22 @@
         <source src="<%= @video.url %>" type='video/webm; codecs="vp8, vorbis"'/>
         <source src="<%= @video.url %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
         <source src="<%= @video.url %>" type='video/ogg; codecs="theora, vorbis"'/>
-        <% if @video.with_subtitle? && false %>
-            <track kind="subtitles" label="En/Ch" srclang="en/ch" type="text/x-srt" src="<%= @video.subtitle_url %>"></track>
-        <% end %>
       </video>
+  <div id="subtitler"></div>
   <% if ! @video.group_id.nil? %>
   <%= render 'list' %>
   <% end %>
 </div>
 
+<% if @video.with_subtitle? %>
+    <script>
+      $('#subtitler').css( 'top', <%= @video.height - 80 %> + 'px' );
+        $.get( '<%= @video.subtitle_url %>', function(data){
+            var sub = new Subtitler(data);
+            var video = $('video')[0];
+            video.addEventListener( "timeupdate", function() {
+                sub.move(video.currentTime);
+            } );
+        } );
+    </script>
+<% end %>
