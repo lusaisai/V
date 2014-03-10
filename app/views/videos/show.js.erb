@@ -53,6 +53,10 @@
         JVideo.css('width', width);
         JVideo.css('height', height);
 
+        var JSubdiv = $('#subtitler');
+        if ( JSubdiv ) {
+        JSubdiv.css( 'top', height - 80 );
+        }
     };
     placePlayer();
     JPlayer.fadeIn('slow');

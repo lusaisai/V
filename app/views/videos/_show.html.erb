@@ -12,7 +12,6 @@
 
 <% if @video.with_subtitle? %>
     <script>
-      $('#subtitler').css( 'top', <%= @video.height - 80 %> + 'px' );
         $.get( '<%= @video.subtitle_url %>', function(data){
             var sub = new Subtitler(data);
             var video = $('video')[0];
