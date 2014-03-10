@@ -30,7 +30,7 @@
         var left = ( $(window).width() - <%= @video.width %> ) / 2 ;
         JPlayer.css( 'top', top );
         JPlayer.css( 'left', left );
-    }
+    };
     placePlayer();
     JPlayer.fadeIn('slow');
     $( window ).resize(function() {
@@ -41,10 +41,10 @@
     video.volume = 0.8;
     video.play();
 
-
-    $('#overlay').height(JBody.height());
-    $('#overlay').fadeIn('slow');
-    $('#overlay').click(removePlayer);
+    var JOverlay = $('#overlay');
+    JOverlay.height(JBody.height());
+    JOverlay.fadeIn('slow');
+    JOverlay.click(removePlayer);
 
 
 })();

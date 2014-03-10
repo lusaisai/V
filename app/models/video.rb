@@ -5,6 +5,21 @@ class Video < ActiveRecord::Base
   URL_PREFIX = 'http://localhost:8080/videos/'
   FILE_PREFIX = 'N:/Videos/'
 
+  def next_video_in_group
+    return nil unless group_id
+    it_videos = group.videos.where(1).load.each
+    loop do
+      break if it_videos.next.id == id
+    end
+
+    next_video = nil
+    begin
+      next_video = it_videos.next
+    rescue
+    end
+    return next_video
+  end
+
   def image_path
     path.sub(/\.[^.]*$/, '') + '.jpg'
   end

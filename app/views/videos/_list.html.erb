@@ -13,4 +13,14 @@
           function(){$('.playlist').animate({opacity: 0.8},800);},
           function(){$('.playlist').animate({opacity: 0},800);}
   );
+  <% next_video = @video.next_video_in_group %>
+  <% if next_video %>
+  var video = $('video')[0];
+  video.addEventListener( "ended", function() {
+      $.ajax({
+          url: "<%= escape_javascript video_url next_video %>",
+          dataType: 'script'
+      });
+  } );
+  <% end %>
 </script>
