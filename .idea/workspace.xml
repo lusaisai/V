@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="526870b6-c3d5-437c-95b5-4883fb53b4b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/_show.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/_show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.js.erb" afterPath="$PROJECT_DIR$/app/views/videos/show.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,19 +38,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.js.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.js.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/videos/show.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="45" selection-start="1519" selection-end="1519" vertical-scroll-proportion="-13.730769" vertical-offset="476" max-vertical-offset="1428">
+            <state line="25" column="18" selection-start="651" selection-end="651" vertical-scroll-proportion="-0.33512545" vertical-offset="612" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_list.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_list.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/videos/_list.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="6" selection-start="303" selection-end="303" vertical-scroll-proportion="0.2437276" vertical-offset="0" max-vertical-offset="558">
+            <state line="22" column="9" selection-start="782" selection-end="782" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -899,7 +898,11 @@
       <created>1394444535063</created>
       <updated>1394444535063</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="replace subtitle">
+      <created>1394446450675</created>
+      <updated>1394446450675</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -980,7 +983,8 @@
     <MESSAGE value="update subtitle parser" />
     <MESSAGE value="auto play the next video in the playlist" />
     <MESSAGE value="auto resize the player to fit into browser size" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto resize the player to fit into browser size" />
+    <MESSAGE value="replace subtitle" />
+    <option name="LAST_COMMIT_MESSAGE" value="replace subtitle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1268,16 +1272,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/show.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/videos/_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1519" selection-end="1519" vertical-scroll-proportion="-13.730769" vertical-offset="476" max-vertical-offset="1428">
+        <state line="22" column="9" selection-start="782" selection-end="782" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/_list.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/videos/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="303" selection-end="303" vertical-scroll-proportion="0.2437276" vertical-offset="0" max-vertical-offset="558">
+        <state line="25" column="18" selection-start="651" selection-end="651" vertical-scroll-proportion="-0.33512545" vertical-offset="612" max-vertical-offset="1496">
           <folding />
         </state>
       </provider>

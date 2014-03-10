@@ -25,6 +25,8 @@
 
     var JPlayer = $('#player');
     var JVideo = $('video');
+    var JOverlay = $('#overlay');
+    var JSubDiv = $('#subtitler');
 
     var placePlayer = function() {
         var avaHeight = $(window).height();
@@ -53,10 +55,14 @@
         JVideo.css('width', width);
         JVideo.css('height', height);
 
-        var JSubdiv = $('#subtitler');
-        if ( JSubdiv ) {
-        JSubdiv.css( 'top', height - 80 );
+        // subtitle
+
+        if ( JSubDiv ) {
+        JSubDiv.css( 'top', height - 80 );
         }
+
+        // overlay
+        JOverlay.height(Math.max( JBody.height(), avaHeight));
     };
     placePlayer();
     JPlayer.fadeIn('slow');
@@ -64,12 +70,10 @@
         placePlayer();
     });
 
-    var video = $('video')[0];
+    var video =JVideo[0];
     video.volume = 0.8;
     video.play();
 
-    var JOverlay = $('#overlay');
-    JOverlay.height(JBody.height());
     JOverlay.fadeIn('slow');
     JOverlay.click(removePlayer);
 
