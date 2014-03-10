@@ -60,8 +60,11 @@ class AdminController < ApplicationController
     Video.find_each do |v|
       v.delete unless File.exist? File.join ROOT, v.path
     end
-    Group.find_each do |v|
-      v.delete unless File.exist? File.join ROOT, v.path
+    Group.find_each do |g|
+      g.delete unless Dir.exist? File.join ROOT, g.path
+    end
+    Category.find_each do |c|
+      c.delete unless Dir.exist? File.join ROOT, c.name
     end
     respond_to do |format|
       format.js {}

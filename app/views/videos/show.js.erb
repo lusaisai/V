@@ -24,12 +24,35 @@
     JBody.append("<%= escape_javascript(render 'show') %>");
 
     var JPlayer = $('#player');
+    var JVideo = $('video');
 
     var placePlayer = function() {
-        var top = ( $(window).height() - <%= @video.height %> ) / 2 ;
-        var left = ( $(window).width() - <%= @video.width %> ) / 2 ;
+        var avaHeight = $(window).height();
+        var avaWidth = $(window).width();
+        var avaRatio = avaWidth / avaHeight;
+        var oriWidth = <%= @video.width %>;
+        var oriHeight = <%= @video.height %>;
+        var width = oriWidth;
+        var height = oriHeight;
+        var oriRatio = oriWidth / oriHeight;
+        if ( avaRatio > oriRatio ) {
+            if ( avaHeight < oriHeight ) {
+                height = avaHeight;
+                width = oriWidth * ( avaHeight / oriHeight );
+            }
+        } else {
+            if ( avaWidth < oriWidth ) {
+                width = avaWidth;
+                height = oriHeight * ( avaWidth / oriWidth )
+            }
+        }
+        var top = ( avaHeight - height ) / 2 ;
+        var left = ( avaWidth - width ) / 2 ;
         JPlayer.css( 'top', top );
         JPlayer.css( 'left', left );
+        JVideo.css('width', width);
+        JVideo.css('height', height);
+
     };
     placePlayer();
     JPlayer.fadeIn('slow');
