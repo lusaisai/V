@@ -1,18 +1,21 @@
 <div class="playlist">
   <% @video.group.videos.each do |video| %>
       <% if video.id == @video.id %>
-        <div class="current"><%= link_to video.name, video, remote: true %></div>
+        <div id="<%= video.id %>" class="current"><%= link_to video.name, video, remote: true %></div>
       <% else %>
-        <div><%= link_to video.name, video, remote: true %></div>
+        <div id="<%= video.id %>"><%= link_to video.name, video, remote: true %></div>
       <% end %>
   <% end %>
 </div>
 <script>
-  $('.playlist').animate({opacity: 0},1000);
+  $('.playlist').animate({opacity: 0},1000, function(){
+      document.getElementById(<%= @video.id %>).scrollIntoView();
+  });
   $('.playlist').hover(
           function(){$('.playlist').animate({opacity: 0.8},800);},
           function(){$('.playlist').animate({opacity: 0},800);}
   );
+
   <% next_video = @video.next_video_in_group %>
   <% if next_video %>
   var video = $('video')[0];
