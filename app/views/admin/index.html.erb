@@ -1,31 +1,41 @@
 <div class="pure-u-1-5">
-  <button id="scan-videos" class="pure-button pure-button-primary">SCAN Videos</button>
-  <button id="clean-up" class="pure-button pure-button-primary">Clean Up</button>
+  <button id="process" class="pure-button pure-button-primary">Process</button>
 </div>
-<div class="pure-u-4-5">
-    <ul id="result"></ul>
+<div id="result" class="pure-u-4-5 admin-result">
+
 </div>
 <script>
-  var check = function( remote_path ){
-        return function(){
+    var JLog = $('#result');
+
+    var print = function(data) {
+        JLog.append( '<p>' + data + '</p>' ) ;
+        $(document).scrollTop($('body').height());
+    };
+
+    var process = function(){
         if($(this).prop("disabled")) return;
         $(this).prop("disabled", true );
         var that = this;
-        var JLog = $('#result');
 
-        $.ajax( remote_path )
-              .done(function() {
-                  JLog.empty().append( '<li>Finished</li>' );
-              })
-              .fail(function() {
-                  JLog.empty().append( '<li>Error</li>' );
-              })
-              .always(function() {
-                  $(that).prop("disabled", false );
-              });
-      }
-  }
-  $('#scan-videos').click(check('<%= admin_scan_path %>'));
-  $('#clean-up').click(check('<%= admin_clean_path %>'));
+        $.ajax({
+            url: '<%= admin_scan_path %>'
+        }).always(function(){
+            $(that).prop("disabled", false );
+        });
+
+        var con = new WebSocket('ws://localhost:8000/');
+
+        con.onmessage = function(message){
+            print(message.data);
+        };
+
+        con.onopen = function () {
+            con.send('start');
+        };
+
+    };
+
+    $('#process').click(process);
+
 
 </script>
