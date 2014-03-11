@@ -1,0 +1,107 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$unit_width : 350px;
+$unit_height : 200px;
+
+html, body {
+  color: #ffffff;
+  background-color: black;
+  min-height: 100%;
+}
+
+a:hover, a:focus, a:active, a {
+  outline: none;
+}
+
+.pure-g {
+  text-align: center;
+}
+
+a,button,div,p,li,div {
+  font-family: "Microsoft YaHei","Hiragino Sans GB W3",Tahoma,Arial;
+}
+
+form {
+  margin: 5px;
+
+}
+
+img.small-cover {
+  max-width: $unit_width;
+  max-height: $unit_height;
+  box-shadow: 0 0 6px 2px rgba(247, 246, 242, 0.75);
+  border-radius: 5px;
+}
+
+.nav{
+  text-align: center;
+}
+
+li {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-current {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+div.unit {
+  display: inline-block;
+  width:$unit_width;
+  height: $unit_height;
+  margin: 10px;
+  position: relative;
+}
+
+div.info {
+  z-index: 10;
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.6;
+  position:absolute;
+  top: 0;
+  font-size: 150%;
+  width: 100%;
+  display: none;
+}
+
+.player {
+  position: fixed;
+  z-index: 15;
+  display: none;
+}
+
+.overlay{
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.8); /*dim the background*/
+}
+
+.playlist {
+  background-color: rgba(0,0,0,0.8); /*dim the background*/
+  max-height: 150px;
+  overflow: scroll;
+  a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px 20px;
+    width: 100%;
+    display: block;
+  }
+  div:hover {
+    background-color: dimgrey;
+  }
+  .current a {
+    color: lightcoral;
+  }
+}
+
