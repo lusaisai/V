@@ -1,4 +1,6 @@
 class AdminController < ApplicationController
+  include ActionController::Live
+
   ROOT = 'N:/Videos'
 
   def index
@@ -34,9 +36,8 @@ class AdminController < ApplicationController
       end
     end
 
-    respond_to do |format|
-      format.js {}
-    end
+    render nothing: TRUE
+
   end
 
   def save_video( path, category, group )
@@ -66,9 +67,8 @@ class AdminController < ApplicationController
     Category.find_each do |c|
       c.delete unless Dir.exist? File.join ROOT, c.name
     end
-    respond_to do |format|
-      format.js {}
-    end
+
+    render nothing: TRUE
   end
 
 end
