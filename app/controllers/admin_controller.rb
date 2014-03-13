@@ -5,7 +5,7 @@ class AdminController < ApplicationController
 
   def scan
     log = IO.popen("node #{Rails.root.join 'app', 'bin', 'admin.js'}", 'w')
-    log.write "Start processing ...\n"
+    log.write "Start processing ...<br/>"
     Dir.chdir ROOT
     Dir.entries('.').each do |base_dir|
       next if base_dir == '.' || base_dir == '..'
@@ -50,6 +50,7 @@ class AdminController < ApplicationController
     end
 
     log.write "End processing ...<br/>"
+    log.flush
     log.write 'stop'
     render nothing: TRUE
   end

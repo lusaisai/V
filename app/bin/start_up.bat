@@ -1,4 +1,5 @@
 TITLE Rails - V
 d:
-cd RubymineProjects/V
+cd D:\RubymineProjects\V
+del D:\RubymineProjects\V\tmp\pids\server.pid
 rails server -e production
