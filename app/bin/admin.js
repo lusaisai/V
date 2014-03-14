@@ -3,9 +3,13 @@ var fs = require('fs');
 
 var monitorAndSend = function(ws) {
     process.stdin.on('readable', function(){
-        var chunk = process.stdin.read().toString();
-        if(chunk.valueOf() == "stop".valueOf()) process.exit();
-        ws.send(chunk);
+        try {
+            var chunk = process.stdin.read().toString();
+            if(chunk.valueOf() == "stop".valueOf()) process.exit();
+            ws.send(chunk);
+        } catch (e) {
+            process.exit();
+        }
     });
 
 };

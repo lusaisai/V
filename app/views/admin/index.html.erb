@@ -15,6 +15,7 @@
     var process = function(){
         if($(this).prop("disabled")) return;
         $(this).prop("disabled", true );
+        JLog.empty();
         var that = this;
 
         $.ajax({

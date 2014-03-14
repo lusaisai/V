@@ -5,6 +5,7 @@ class AdminController < ApplicationController
 
   def scan
     log = IO.popen("node #{Rails.root.join 'app', 'bin', 'admin.js'}", 'w')
+    sleep 1
     log.write "Start processing ...<br/>"
     Dir.chdir ROOT
     Dir.entries('.').each do |base_dir|
@@ -39,13 +40,13 @@ class AdminController < ApplicationController
     end
 
     log.write "Cleaning up ...<br/>"
-    Video.find_each do |v|
+    Video.all.each do |v|
       v.delete unless File.exist? File.join ROOT, v.path
     end
-    Group.find_each do |g|
+    Group.all.each do |g|
       g.delete unless Dir.exist? File.join ROOT, g.path
     end
-    Category.find_each do |c|
+    Category.all.each do |c|
       c.delete unless Dir.exist? File.join ROOT, c.name
     end
 
