@@ -4,8 +4,10 @@ class AdminController < ApplicationController
   ROOT = 'N:/Videos'
 
   def scan
-    log = IO.popen("node #{Rails.root.join 'app', 'bin', 'admin.js'}", 'w')
-    sleep 1
+    log = IO.popen("node #{Rails.root.join 'app', 'bin', 'admin.js'}", 'r+')
+    10.times do
+      break if log.gets == "start\n"
+    end
     log.write "Start processing ...<br/>"
     Dir.chdir ROOT
     Dir.entries('.').each do |base_dir|

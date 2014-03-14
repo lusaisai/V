@@ -23,7 +23,10 @@ wss.on('connection', function(ws) {
     ws.on('message', function(message) {
         if( message == 'start' && !started ) {
             monitorAndSend(ws);
+            console.log('start\n');
             started = true;
+        } else if ( started ) {
+            ws.send('Already started.')
         } else {
             ws.send(info);
         }
