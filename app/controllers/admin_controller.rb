@@ -1,12 +1,22 @@
+require 'timeout'
+
 class AdminController < ApplicationController
   include ActionController::Live
 
   ROOT = 'N:/Videos'
+  FULL_MODE = 0
+  NEW_MODE = 1
 
   def scan
+    mode = params[:mode].to_i
     log = IO.popen("node #{Rails.root.join 'app', 'bin', 'admin.js'}", 'r+')
-    10.times do
-      break if log.gets == "start\n"
+    begin
+      Timeout::timeout(5) {
+        while 1 do
+          break if log.gets == "start\n"
+        end
+      }
+    rescue Timeout::Error
     end
     log.write "Start processing ...<br/>"
     Dir.chdir ROOT
@@ -22,21 +32,23 @@ class AdminController < ApplicationController
           if File.directory? name
             # group info
             log.write "Entering #{name} ...<br/>"
-            group = Group.find_or_create_by path: File.join(base_dir, name)
-            group.name = name
-            group.with_image = File.exist? "#{name}/cover.jpg"
-            group.save
+            group = Group.find_or_initialize_by path: File.join(base_dir, name)
+            if group.new_record? || mode == FULL_MODE
+              group.name = name
+              group.with_image = File.exist? "#{name}/cover.jpg"
+              group.save
+            end
 
             Dir.entries(name).each do |video_name|
               next if video_name == '.' || video_name == '..'
               log.write "Processing #{video_name} ...<br/>"
-              save_video File.join( base_dir, name, video_name), cate, group
+              save_video File.join( base_dir, name, video_name), cate, group, mode
             end
             next
           end
           #single video files
           log.write "Processing #{name} ...<br/>"
-          save_video File.join( base_dir, name), cate, nil
+          save_video File.join( base_dir, name), cate, nil, mode
         end
       end
     end
@@ -58,9 +70,10 @@ class AdminController < ApplicationController
     render nothing: TRUE
   end
 
-  def save_video( path, category, group )
+  def save_video( path, category, group, mode )
     return unless is_video(path)
-    video = Video.find_or_create_by path: path
+    video = Video.find_or_initialize_by path: path
+    return unless (video.new_record? || mode == FULL_MODE)
     video.name = File.basename(path).sub /\.[^.]*$/, ''
     video.with_image = File.exist? video.image_file
     video.ass2srt

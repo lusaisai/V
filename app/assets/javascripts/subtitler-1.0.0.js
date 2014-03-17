@@ -1,29 +1,36 @@
 (function() {
-    var Subtitler = function (argument) {
+    var Subtitler = function (options) {
         this.divId = 'subtitler';
         this.cssShow = 'subtitler-show';
         this.cssHide = 'subtitler-hide';
+        this.offset = 0;
         this.currentLine = -1;
-        if (argument) {
-            this.setSubtitle(argument);
+        if( options ) {
+            for( var prop in options ) {
+                if ( typeof this[prop] != "undefined") {
+                    this[prop] =  options[prop];
+                }
+            }
         }
+
     };
 
     Subtitler.prototype.setSubtitle = function(text) {
         this.subtitleArray = [];
         var rawArray = text.split(/[\r\n]+/);
-        window.rawArray = rawArray;
         for (var i = 0, linenum = 1; i < rawArray.length; linenum++) {
             var data = {text: ''};
             if ( rawArray[i] == linenum ) {
                 var duration = rawArray[++i].split(' --> ');
-                data.starttime = toSeconds(duration[0]);
-                data.endtime = toSeconds(duration[1]);
+                data.starttime = toSeconds(duration[0]) + this.offset;
+                data.endtime = toSeconds(duration[1]) + this.offset;
             }
-            while( i < rawArray.length && rawArray[++i] != linenum + 1 ) {
-                data.text += rawArray[i];
+            var textArray = [];
+            while( i < rawArray.length && rawArray[++i] && rawArray[i] != linenum + 1 ) {
+                textArray.push(rawArray[i]);
             }
-            this.subtitleArray.push(data);
+            data.text = textArray.join('<br/>');
+            if ( data.text ) {this.subtitleArray.push(data);}
         }
 
     };
@@ -63,8 +70,6 @@
             setHtml(this, undefined);
             this.rest = true;
         }
-
-
     };
 
     var binary_search = function( self, array, startindex, endindex, time ) {
@@ -119,8 +124,6 @@
             subdiv.className = self.cssHide;
         }
     };
-
-
 
     var toSeconds = function(time) {
         if( ! time ) return -1;

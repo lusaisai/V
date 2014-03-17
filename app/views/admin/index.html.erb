@@ -1,5 +1,6 @@
 <div class="pure-u-1-5">
-  <button id="process" class="pure-button pure-button-primary">Process</button>
+  <button id="new" class="pure-button pure-button-primary">Find New</button>
+  <button id="all" class="pure-button pure-button-primary">Refresh All</button>
 </div>
 <div id="result" class="pure-u-4-5 admin-result">
 
@@ -12,31 +13,33 @@
         $(document).scrollTop($('body').height());
     };
 
-    var process = function(){
-        if($(this).prop("disabled")) return;
-        $(this).prop("disabled", true );
-        JLog.empty();
-        var that = this;
+    var process = function(mode){
+        return function(){
+            if($(this).prop("disabled")) return;
+            $(this).prop("disabled", true );
+            JLog.empty();
+            var that = this;
 
-        $.ajax({
-            url: '<%= admin_scan_path %>'
-        }).always(function(){
-            $(that).prop("disabled", false );
-        });
+            $.ajax({
+                url: '/admin/scan/' + mode
+            }).always(function(){
+                $(that).prop("disabled", false );
+            });
 
-        var con = new WebSocket('ws://localhost:8000/');
+            var con = new WebSocket('ws://localhost:8000/');
 
-        con.onmessage = function(message){
-            print(message.data);
+            con.onmessage = function(message){
+                print(message.data);
+            };
+
+            con.onopen = function () {
+                con.send('start');
+            };
         };
-
-        con.onopen = function () {
-            con.send('start');
-        };
-
     };
 
-    $('#process').click(process);
+    $('#new').click(process(<%= AdminController::NEW_MODE %>));
+    $('#all').click(process(<%= AdminController::FULL_MODE %>));
 
 
 </script>

@@ -13,7 +13,8 @@
 <% if @video.with_subtitle? %>
     <script>
         $.get( '<%= @video.subtitle_url %>', function(data){
-            var sub = new Subtitler(data);
+            var sub = new Subtitler();
+            sub.setSubtitle(data);
             var video = $('video')[0];
             video.addEventListener( "timeupdate", function() {
                 sub.move(video.currentTime);
