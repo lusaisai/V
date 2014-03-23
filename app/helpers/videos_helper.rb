@@ -1,5 +1,5 @@
 module VideosHelper
-  PREFIX = 'http://localhost:8080/videos/'
+  PREFIX = 'http://localhost/videos/'
 
   def image_url(video)
     if video.with_image
