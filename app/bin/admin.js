@@ -5,11 +5,14 @@ var monitorAndSend = function(ws) {
     process.stdin.on('readable', function(){
         try {
             var chunk = process.stdin.read().toString();
-            if(chunk.valueOf() == "stop".valueOf()) process.exit();
             ws.send(chunk);
         } catch (e) {
             process.exit();
         }
+    });
+
+    process.stdin.on('end', function(){
+        process.exit();
     });
 
 };

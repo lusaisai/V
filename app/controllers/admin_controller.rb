@@ -64,9 +64,9 @@ class AdminController < ApplicationController
       c.delete unless Dir.exist? File.join ROOT, c.name
     end
 
-    log.write "End processing ...<br/>"
-    log.flush
-    log.write 'stop'
+    log.write "End processing ...<br/>\n"
+    log.close
+    Process.waitpid log.pid
     render nothing: TRUE
   end
 
