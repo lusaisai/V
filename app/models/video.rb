@@ -56,7 +56,7 @@ class Video < ActiveRecord::Base
   def set_width_height
     self.width= 1280 #default values
     self.height= 720
-    options = if `uname` == 'Linux'
+    options = if `uname`.chop == 'Linux'
                 ''
               else
                 ' -i '
