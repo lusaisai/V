@@ -56,7 +56,12 @@ class Video < ActiveRecord::Base
   def set_width_height
     self.width= 1280 #default values
     self.height= 720
-    command = 'ffprobe -show_streams -i ' + "\"#{file.encode Encoding.default_external}\""
+    options = if `uname` == 'Linux'
+                ''
+              else
+                ' -i '
+              end
+    command = 'ffprobe -show_streams ' + options + "\"#{file.encode Encoding.default_external}\""
     data = `#{command}`.split "\n"
     data.each do |s|
       if s.start_with? 'width='
