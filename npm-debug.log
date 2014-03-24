@@ -1,0 +1,131 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'sqlite3' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'sqlite3', null ]
+6 verbose cache add name=undefined spec="sqlite3" args=["sqlite3",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'sqlite3',
+7 verbose parsed url   path: 'sqlite3',
+7 verbose parsed url   href: 'sqlite3' }
+8 silly lockFile b54e393c-sqlite3 sqlite3
+9 verbose lock sqlite3 C:\Users\lusaisai\AppData\Roaming\npm-cache\b54e393c-sqlite3.lock
+10 silly lockFile b54e393c-sqlite3 sqlite3
+11 silly lockFile b54e393c-sqlite3 sqlite3
+12 verbose addNamed [ 'sqlite3', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile b9879749-sqlite3 sqlite3@
+15 verbose lock sqlite3@ C:\Users\lusaisai\AppData\Roaming\npm-cache\b9879749-sqlite3.lock
+16 silly addNameRange { name: 'sqlite3', range: '*', hasData: false }
+17 verbose url raw sqlite3
+18 verbose url resolving [ 'https://registry.npmjs.org/', './sqlite3' ]
+19 verbose url resolved https://registry.npmjs.org/sqlite3
+20 info trying registry request attempt 1 at 04:25:34
+21 verbose etag "2LUETJJ7KN48WHFT3X3AN7KHY"
+22 http GET https://registry.npmjs.org/sqlite3
+23 http 304 https://registry.npmjs.org/sqlite3
+24 silly registry.get cb [ 304,
+24 silly registry.get   { date: 'Tue, 11 Mar 2014 20:25:33 GMT',
+24 silly registry.get     server: 'Apache',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     'last-modified': 'Tue, 11 Mar 2014 20:25:33 GMT',
+24 silly registry.get     'cache-control': 'max-age=1',
+24 silly registry.get     etag: '"2LUETJJ7KN48WHFT3X3AN7KHY"',
+24 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1394569533.002072573,VS0,VE424',
+24 silly registry.get     vary: 'Accept',
+24 silly registry.get     'content-length': '0',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 verbose etag sqlite3 from cache
+26 silly addNameRange number 2 { name: 'sqlite3', range: '*', hasData: true }
+27 silly addNameRange versions [ 'sqlite3',
+27 silly addNameRange   [ '2.0.0',
+27 silly addNameRange     '2.0.1',
+27 silly addNameRange     '2.0.2',
+27 silly addNameRange     '2.0.3',
+27 silly addNameRange     '2.0.4',
+27 silly addNameRange     '2.0.5',
+27 silly addNameRange     '2.0.6',
+27 silly addNameRange     '2.0.7',
+27 silly addNameRange     '2.0.8',
+27 silly addNameRange     '2.0.9',
+27 silly addNameRange     '2.0.10',
+27 silly addNameRange     '2.0.11',
+27 silly addNameRange     '2.0.12',
+27 silly addNameRange     '2.0.13',
+27 silly addNameRange     '2.0.14',
+27 silly addNameRange     '2.0.15',
+27 silly addNameRange     '2.0.16',
+27 silly addNameRange     '2.0.17',
+27 silly addNameRange     '2.0.18',
+27 silly addNameRange     '2.1.0',
+27 silly addNameRange     '2.1.1',
+27 silly addNameRange     '2.1.2',
+27 silly addNameRange     '2.1.3',
+27 silly addNameRange     '2.1.4',
+27 silly addNameRange     '2.1.5',
+27 silly addNameRange     '2.1.7',
+27 silly addNameRange     '2.1.8',
+27 silly addNameRange     '2.1.9',
+27 silly addNameRange     '2.1.10',
+27 silly addNameRange     '2.1.11',
+27 silly addNameRange     '2.1.12',
+27 silly addNameRange     '2.1.13',
+27 silly addNameRange     '2.1.14',
+27 silly addNameRange     '2.1.15',
+27 silly addNameRange     '2.1.16',
+27 silly addNameRange     '2.1.17',
+27 silly addNameRange     '2.1.18',
+27 silly addNameRange     '2.1.19',
+27 silly addNameRange     '2.2.0' ] ]
+28 verbose addNamed [ 'sqlite3', '2.2.0' ]
+29 verbose addNamed [ '2.2.0', '2.2.0' ]
+30 silly lockFile 277f5035-sqlite3-2-2-0 sqlite3@2.2.0
+31 verbose lock sqlite3@2.2.0 C:\Users\lusaisai\AppData\Roaming\npm-cache\277f5035-sqlite3-2-2-0.lock
+32 silly lockFile 2d79ec90-js-org-sqlite3-sqlite3-2-2-0-tgz https://registry.npmjs.org/sqlite3/-/sqlite3-2.2.0.tgz
+33 verbose lock https://registry.npmjs.org/sqlite3/-/sqlite3-2.2.0.tgz C:\Users\lusaisai\AppData\Roaming\npm-cache\2d79ec90-js-org-sqlite3-sqlite3-2-2-0-tgz.lock
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/sqlite3/-/sqlite3-2.2.0.tgz',
+34 verbose addRemoteTarball   'ff0e4a73389d34245f346478ee763505da564fb2' ]
+35 info retry fetch attempt 1 at 04:25:36
+36 verbose fetch to= C:\Users\lusaisai\AppData\Local\Temp\npm-6912-eS_4uR1z\1394569536219-0.5310463444329798\tmp.tgz
+37 http GET https://registry.npmjs.org/sqlite3/-/sqlite3-2.2.0.tgz
+38 http 200 https://registry.npmjs.org/sqlite3/-/sqlite3-2.2.0.tgz
+39 silly lockFile 2d79ec90-js-org-sqlite3-sqlite3-2-2-0-tgz https://registry.npmjs.org/sqlite3/-/sqlite3-2.2.0.tgz
+40 silly lockFile 2d79ec90-js-org-sqlite3-sqlite3-2-2-0-tgz https://registry.npmjs.org/sqlite3/-/sqlite3-2.2.0.tgz
+41 silly lockFile 277f5035-sqlite3-2-2-0 sqlite3@2.2.0
+42 silly lockFile 277f5035-sqlite3-2-2-0 sqlite3@2.2.0
+43 silly lockFile b9879749-sqlite3 sqlite3@
+44 silly lockFile b9879749-sqlite3 sqlite3@
+45 error Error: shasum check failed for C:\Users\lusaisai\AppData\Local\Temp\npm-6912-eS_4uR1z\1394569536219-0.5310463444329798\tmp.tgz
+45 error Expected: ff0e4a73389d34245f346478ee763505da564fb2
+45 error Actual:   137aa5f0cbcf04585e832d65820232dee0fe7159
+45 error From:     https://registry.npmjs.org/sqlite3/-/sqlite3-2.2.0.tgz
+45 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:38:8
+45 error     at ReadStream.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:85:7)
+45 error     at ReadStream.EventEmitter.emit (events.js:117:20)
+45 error     at _stream_readable.js:920:16
+45 error     at process._tickCallback (node.js:415:13)
+46 error If you need help, you may report this *entire* log,
+46 error including the npm and node versions, at:
+46 error     <http://github.com/npm/npm/issues>
+47 error System Windows_NT 6.1.7601
+48 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "sqlite3"
+49 error cwd D:\RubymineProjects\V
+50 error node -v v0.10.26
+51 error npm -v 1.4.3
+52 verbose exit [ 1, true ]

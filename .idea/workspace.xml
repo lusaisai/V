@@ -1,17 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="526870b6-c3d5-437c-95b5-4883fb53b4b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="D:\RubymineProjects\V\app\helpers\admins_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RubymineProjects\V\app\helpers\application_helper.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/V.iml" afterPath="$PROJECT_DIR$/.idea/V.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/video.rb" afterPath="$PROJECT_DIR$/app/models/video.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/videos_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/videos_helper.rb" />
+    <list default="true" id="526870b6-c3d5-437c-95b5-4883fb53b4b5" name="Default" comment="sync missed code">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/nan/.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/fileapi/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/commander/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/options/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/tinycolor/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/commander/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140307090746_add_width_and_height_to_videos.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/BufferPool.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/BufferPool.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/BufferUtil.fallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/BufferUtil.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/ErrorCodes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/commander/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/nan/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/commander/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/options/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/nan/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/options/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/tinycolor/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/commander/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Receiver.hixie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/Receiver.hixie.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Receiver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/Receiver.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Sender.hixie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/Sender.hixie.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Sender.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/Sender.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Validation.fallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/Validation.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/WebSocket.integration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/WebSocket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/WebSocket.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/WebSocketServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/WebSocketServer.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/fixtures/agent1-cert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/fixtures/agent1-key.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/fileapi/public/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/autobahn-server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/autobahn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/binding.gyp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/lib/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/src/bufferutil.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/builderror.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/fixtures/ca1-cert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/fixtures/ca1-key.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/categories_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/categories_helper_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/fixtures/certificate.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/commander/lib/commander.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/tinycolor/example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/home_helper_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/hybi-common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/fileapi/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/serverstats-express_3/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/serverstats/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/commander/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/fixtures/key.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/nan/nan.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/options/lib/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/options/test/options.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/fileapi/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/serverstats/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/serverstats-express_3/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/commander/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/nan/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/options/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/tinycolor/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/bench/parser.benchmark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/fixtures/request.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/bench/sender.benchmark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/fileapi/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/serverstats/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/serverstats-express_3/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/bench/speed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/ssl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/options/test/fixtures/test.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/testserver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/test/fixtures/textfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/node_modules/tinycolor/tinycolor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/examples/fileapi/public/uploader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/bench/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/src/validation.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/doc/ws.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/wscat.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/wscat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ws/bin/wscat" />
+      <change type="DELETED" beforePath="D:\RubymineProjects\V\Gemfile.lock" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="V.iws" />
@@ -28,11 +122,11 @@
     <SUITE FILE_PATH="coverage/V@test_should_get_clean__V.coverage" NAME="test_should_get_clean: V Coverage Results" MODIFIED="1393953718525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@test_should_get_scan__V.coverage" NAME="test_should_get_scan: V Coverage Results" MODIFIED="1394186634031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@Run_test__admins_controller_test___V.coverage" NAME="Run test 'admins_controller_test': V Coverage Results" MODIFIED="1393952824739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
-    <SUITE FILE_PATH="coverage/V@Development__V.coverage" NAME="Development: V Coverage Results" MODIFIED="1395630276347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@Production__V.coverage" NAME="Production: V Coverage Results" MODIFIED="1394621016289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
+    <SUITE FILE_PATH="coverage/V@Development__V.coverage" NAME="Development: V Coverage Results" MODIFIED="1395630276347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@assets_precompile__V.coverage" NAME="assets:precompile: V Coverage Results" MODIFIED="1395549481024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
-    <SUITE FILE_PATH="coverage/V@db_setup__V.coverage" NAME="db:setup: V Coverage Results" MODIFIED="1394442846078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@db_migrate.coverage" NAME="db:migrate Coverage Results" MODIFIED="1394186842375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
+    <SUITE FILE_PATH="coverage/V@db_setup__V.coverage" NAME="db:setup: V Coverage Results" MODIFIED="1394442846078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
     <SUITE FILE_PATH="coverage/V@Rails_console__V.coverage" NAME="Rails console: V Coverage Results" MODIFIED="1394436360847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="V" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -59,7 +153,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="0" selection-start="3399" selection-end="3399" vertical-scroll-proportion="0.90077823" vertical-offset="982" max-vertical-offset="1547">
+            <state line="85" column="0" selection-start="3399" selection-end="3399" vertical-scroll-proportion="1.3444057" vertical-offset="676" max-vertical-offset="1547">
               <folding />
             </state>
           </provider>
@@ -174,7 +268,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,105 +300,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="V" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,7 +325,7 @@
       <recent name="D:\RubymineProjects\V\vendor\assets\javascripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: V">
+  <component name="RunManager" selected="Rake.assets:precompile: V">
     <configuration default="false" name="test_should_get_scan: V" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="V" />
@@ -755,7 +753,7 @@
     <option name="localTasksCounter" value="35" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -777,23 +775,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="647" y="0" width="1268" height="1041" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32821077" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711306" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33140495" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39187706" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33636364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3916309" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32563257" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32453245" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711306" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958678" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -812,7 +810,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="set subtitle size" />
     <MESSAGE value="ajax + overlay player" />
     <MESSAGE value="sync code" />
     <MESSAGE value="set simple admin page" />
@@ -837,7 +834,8 @@
     <MESSAGE value="add different admin mode" />
     <MESSAGE value="change port" />
     <MESSAGE value="use gem latest" />
-    <option name="LAST_COMMIT_MESSAGE" value="use gem latest" />
+    <MESSAGE value="sync missed code" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync missed code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -848,6 +846,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/video.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="0" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1802">
@@ -864,9 +876,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="86" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="850">
-          <folding />
-        </state>
+        <state line="28" column="86" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="850" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304150136_create_groups.rb">
@@ -892,11 +902,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/jquery.lazyload.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="849" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140307090746_add_width_and_height_to_videos.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.20523138" vertical-offset="0" max-vertical-offset="497" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/admins_controller_test.rb">
@@ -954,16 +959,6 @@
         <state line="10" column="21" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ws/examples/serverstats/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/.bin/wscat.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bin/start_up.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.09637188" vertical-offset="0" max-vertical-offset="882" />
@@ -1018,16 +1013,6 @@
         <state line="3" column="18" selection-start="178" selection-end="178" vertical-scroll-proportion="0.05782313" vertical-offset="0" max-vertical-offset="882" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="63" selection-start="310" selection-end="310" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="882" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.038548753" vertical-offset="0" max-vertical-offset="882" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="401" selection-end="401" vertical-scroll-proportion="0.36621314" vertical-offset="0" max-vertical-offset="882" />
@@ -1038,11 +1023,6 @@
         <state line="8" column="7" selection-start="172" selection-end="172" vertical-scroll-proportion="0.23168655" vertical-offset="0" max-vertical-offset="587" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="53" selection-end="53" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="136" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_category_nav.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="323" />
@@ -1051,11 +1031,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/home/_video_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="64" selection-start="212" selection-end="212" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
@@ -1080,9 +1055,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="173" selection-end="173" vertical-scroll-proportion="-1.5110732" vertical-offset="1006" max-vertical-offset="1666">
-          <folding />
-        </state>
+        <state line="7" column="14" selection-start="173" selection-end="173" vertical-scroll-proportion="-1.5110732" vertical-offset="1006" max-vertical-offset="1666" />
       </provider>
     </entry>
     <entry file="file://C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/railties-4.0.3/lib/rails/railtie/configuration.rb">
@@ -1104,9 +1077,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="86" selection-start="887" selection-end="887" vertical-scroll-proportion="0.3732535" vertical-offset="289" max-vertical-offset="850">
-          <folding />
-        </state>
+        <state line="28" column="86" selection-start="887" selection-end="887" vertical-scroll-proportion="0.3732535" vertical-offset="289" max-vertical-offset="850" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/video.rb">
@@ -1118,7 +1089,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="3399" selection-end="3399" vertical-scroll-proportion="0.90077823" vertical-offset="982" max-vertical-offset="1547">
+        <state line="85" column="0" selection-start="3399" selection-end="3399" vertical-scroll-proportion="1.3444057" vertical-offset="676" max-vertical-offset="1547">
           <folding />
         </state>
       </provider>
