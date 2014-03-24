@@ -77,4 +77,9 @@ V::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # specific config
+  config.video_dir = '/mnt/hgfs/Videos'
+  config.base_url = 'http://windowsai/videos/'
+  config.admin_web_socket = 'ws://ubuntu:8000/'
 end

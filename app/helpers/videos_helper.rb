@@ -1,5 +1,5 @@
 module VideosHelper
-  PREFIX = 'http://localhost/videos/'
+  PREFIX = 'http://windowsai/videos/'
 
   def image_url(video)
     if video.with_image

@@ -27,4 +27,9 @@ V::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  # specific config
+  config.video_dir = 'N:/Videos/'
+  config.base_url = 'http://windowsai/videos/'
+  config.admin_web_socket = 'ws://windowsai:8000/'
+
 end

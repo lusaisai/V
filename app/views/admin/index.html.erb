@@ -26,7 +26,7 @@
                 $(that).prop("disabled", false );
             });
 
-            var con = new WebSocket('ws://localhost:8000/');
+            var con = new WebSocket('<%= Rails.application.config.admin_web_socket %>');
 
             con.onmessage = function(message){
                 print(message.data);

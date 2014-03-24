@@ -2,8 +2,9 @@ require 'uri'
 class Video < ActiveRecord::Base
   has_and_belongs_to_many :categories
   belongs_to :group
-  URL_PREFIX = 'http://localhost/videos/'
-  FILE_PREFIX = 'N:/Videos/'
+
+  URL_PREFIX = Rails.application.config.base_url
+  FILE_PREFIX = Rails.application.config.video_dir
 
   def next_video_in_group
     return nil unless group_id
@@ -55,7 +56,7 @@ class Video < ActiveRecord::Base
   def set_width_height
     self.width= 1280 #default values
     self.height= 720
-    command = '"D:\software\ffmpeg\bin\ffprobe.exe" -show_streams -i ' + "\"#{file.encode 'cp936'}\""
+    command = 'ffprobe -show_streams -i ' + "\"#{file.encode Encoding.default_external}\""
     data = `#{command}`.split "\n"
     data.each do |s|
       if s.start_with? 'width='

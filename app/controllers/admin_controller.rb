@@ -3,7 +3,7 @@ require 'timeout'
 class AdminController < ApplicationController
   include ActionController::Live
 
-  ROOT = 'N:/Videos'
+  ROOT = Rails.application.config.video_dir
   FULL_MODE = 0
   NEW_MODE = 1
 
