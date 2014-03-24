@@ -1,0 +1,62 @@
+#! /bin/sh
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+APP_DIR=/home/lusaisai/web_code/V
+PIDFILE=$APP_DIR/tmp/pids/server.pid
+
+NAME=video-rails-server
+
+set -e
+
+case "$1" in
+  start)
+		cd $APP_DIR
+		rails server --daemon --environment=production
+        if [ $? -eq 0 ]
+        then
+                echo "started $NAME."
+        else
+                echo "failed"
+        fi
+        ;;
+  stop)
+        if [ ! -f $PIDFILE ]; then
+        	echo "$NAME is not running ..."
+        	exit
+        fi
+        kill -9 `cat $PIDFILE`
+        if  [ $? -eq 0 ]
+        then
+                echo "stoped $NAME."
+        else
+                echo "failed"
+        fi
+        rm -f $PIDFILE
+        sleep 1
+        ;;
+
+  restart|force-reload)
+        ${0} stop
+        ${0} start
+        ;;
+
+  status)
+        echo -n "$DESC is "
+        if [ -f ${PIDFILE} ] 
+        then
+                echo "running"
+        else
+                echo "not running"
+                exit 1
+        fi
+        ;;
+
+  *)
+        echo "Usage: /etc/init.d/`basename $0` {start|stop|restart|force-reload|status}" >&2
+        exit 1
+        ;;
+esac
+
+exit 0
+
+
