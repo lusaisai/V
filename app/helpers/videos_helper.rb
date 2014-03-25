@@ -4,8 +4,10 @@ module VideosHelper
   def image_url(video)
     if video.with_image
       video.image_url
-    else
+    elsif video.group && video.group.image_url
       video.group.image_url
+    else
+      "/assets/cover.jpg"
     end
   end
 

@@ -10,6 +10,7 @@ class AdminController < ApplicationController
   def scan
     mode = params[:mode].to_i
     log = IO.popen("node #{Rails.root.join 'app', 'bin', 'admin.js'}", 'r+')
+    pid = log.pid
     begin
       Timeout::timeout(5) {
         while 1 do
@@ -33,11 +34,9 @@ class AdminController < ApplicationController
             # group info
             log.write "Entering #{name} ...<br/>"
             group = Group.find_or_initialize_by path: File.join(base_dir, name)
-            if group.new_record? || mode == FULL_MODE
-              group.name = name
-              group.with_image = File.exist? "#{name}/cover.jpg"
-              group.save
-            end
+            group.name = name
+            group.with_image = File.exist? "#{name}/cover.jpg"
+            group.save
 
             Dir.entries(name).each do |video_name|
               next if video_name == '.' || video_name == '..'
@@ -66,21 +65,19 @@ class AdminController < ApplicationController
 
     log.write "End processing ...<br/>\n"
     log.close
-    Process.waitpid log.pid
     render nothing: TRUE
   end
 
   def save_video( path, category, group, mode )
     return unless is_video(path)
     video = Video.find_or_initialize_by path: path
-    return unless (video.new_record? || mode == FULL_MODE)
     video.name = File.basename(path).sub /\.[^.]*$/, ''
     video.with_image = File.exist? video.image_file
     video.ass2srt
     video.with_subtitle = File.exist? video.subtitle_file
     video.categories << category unless video.categories.include? category
     video.group = group
-    video.set_width_height
+    video.set_width_height if (video.new_record? || mode == FULL_MODE)
     video.save
   end
 
