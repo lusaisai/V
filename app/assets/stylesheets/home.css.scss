@@ -91,7 +91,8 @@ div.info {
 .playlist {
   background-color: rgba(0,0,0,0.8); /*dim the background*/
   max-height: 150px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   a, a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: #ffffff;
