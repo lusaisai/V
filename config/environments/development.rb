@@ -30,6 +30,6 @@ V::Application.configure do
   # specific config
   config.video_dir = 'N:/Videos/'
   config.base_url = 'http://windowsai/videos/'
-  config.admin_web_socket = 'ws://windowsai:8000/'
+  config.admin_web_socket = 'ws://windowsai:3001/'
 
 end

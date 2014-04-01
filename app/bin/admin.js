@@ -17,7 +17,7 @@ var monitorAndSend = function(ws) {
 
 };
 
-var wss = new WebSocketServer({port: 8000});
+var wss = new WebSocketServer({port: 3001});
 
 wss.on('connection', function(ws) {
     var info = 'Please say "start" to tell me to start the admin processing.';
