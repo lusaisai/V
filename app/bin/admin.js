@@ -29,7 +29,7 @@ wss.on('connection', function(ws) {
             console.log('start\n');
             started = true;
         } else if ( started ) {
-            ws.send('Already started.')
+            ws.send('Already started.');
         } else {
             ws.send(info);
         }

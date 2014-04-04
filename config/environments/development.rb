@@ -30,6 +30,6 @@ V::Application.configure do
   # specific config
   config.video_dir = '/mnt/hgfs/Videos/'
   config.base_url = 'http://windowsai/videos/'
-  config.admin_web_socket = 'ws://centos:3001/'
+  config.admin_web_socket = 'ws://mint:3001/'
 
 end

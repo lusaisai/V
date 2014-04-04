@@ -6,40 +6,47 @@
 
 </div>
 <script>
-    var JLog = $('#result');
+    (function(){
+        var JLog = $('#result');
 
-    var print = function(data) {
-        JLog.append( '<p>' + data + '</p>' ) ;
-        $(document).scrollTop($('body').height());
-    };
+        var show_message = function(data) {
+            JLog.append( '<p>' + data + '</p>' ) ;
+            $(document).scrollTop($('body').height());
+        };
 
-    var process = function(mode){
-        return function(){
-            if($(this).prop("disabled")) return;
-            $(this).prop("disabled", true );
-            JLog.empty();
-            var that = this;
+        var process = function(mode){
+            return function(){
+                if($(this).prop("disabled")) return;
+                $(this).prop("disabled", true );
+                JLog.empty();
+                var that = this;
 
-            $.ajax({
-                url: '/admin/scan/' + mode
-            }).always(function(){
-                $(that).prop("disabled", false );
-            });
+                $.ajax({
+                    url: '/admin/scan/' + mode
+                }).always(function(){
+                    $(that).prop("disabled", false );
+                });
 
+                // wait two seconds and start ws
+                JLog.append( '<h3>The process will start in 2 seconds</h3>' ) ;
+                setTimeout(ws_talk, 2000);
+
+            };
+        };
+
+        var ws_talk = function(){
             var con = new WebSocket('<%= Rails.application.config.admin_web_socket %>');
 
             con.onmessage = function(message){
-                print(message.data);
+                show_message(message.data);
             };
 
             con.onopen = function () {
                 con.send('start');
             };
         };
-    };
 
-    $('#new').click(process(<%= AdminController::NEW_MODE %>));
-    $('#all').click(process(<%= AdminController::FULL_MODE %>));
-
-
+        $('#new').click(process(<%= AdminController::NEW_MODE %>));
+        $('#all').click(process(<%= AdminController::FULL_MODE %>));
+    })();
 </script>
