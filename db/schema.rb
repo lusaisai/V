@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140307090746) do
+ActiveRecord::Schema.define(version: 20140405035117) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 20140307090746) do
     t.integer "category_id", null: false
     t.integer "video_id",    null: false
   end
+
+  add_index "categories_videos", ["category_id"], name: "index_categories_videos_on_category_id"
+  add_index "categories_videos", ["video_id"], name: "index_categories_videos_on_video_id"
 
   create_table "groups", force: true do |t|
     t.string   "name"
@@ -43,5 +46,7 @@ ActiveRecord::Schema.define(version: 20140307090746) do
     t.integer  "width"
     t.integer  "height"
   end
+
+  add_index "videos", ["group_id"], name: "index_videos_on_group_id"
 
 end
