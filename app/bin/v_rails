@@ -1,7 +1,7 @@
 #! /bin/sh
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-APP_DIR=/home/lusaisai/web_code/V
+APP_DIR=/home/lusaisai/projects/V
 PIDFILE=$APP_DIR/tmp/pids/server.pid
 
 NAME=video-rails-server
