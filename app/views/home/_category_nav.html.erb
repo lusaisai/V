@@ -2,10 +2,10 @@
 <div class="pure-u-1">
     <div class="nav">
       <ul>
-        <% class_names = (@category_id == 0 ? 'pure-button pure-button-active button-current' : 'pure-button')  %>
+        <% class_names = (@category_id == 0 ? 'pure-button lss-button lss-button-blue' : 'pure-button lss-button lss-button-default')  %>
         <li> <%= link_to button_tag(type: 'button', class: class_names) {'Home'}, root_path %> </li>
         <% @categories.each do |category| %>
-            <% class_names = (@category_id.to_i == category.id ? 'pure-button pure-button-active button-current' : 'pure-button')  %>
+            <% class_names = (@category_id.to_i == category.id ? 'pure-button lss-button lss-button-blue' : 'pure-button lss-button lss-button-default')  %>
             <li> <%= link_to button_tag(type: 'button', class: class_names) {category.name}, category %> </li>
         <% end %>
       </ul>

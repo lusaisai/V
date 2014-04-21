@@ -10,21 +10,8 @@ html, body {
   min-height: 100%;
 }
 
-a:hover, a:focus, a:active, a {
-  outline: none;
-}
-
-.pure-g {
+.content {
   text-align: center;
-}
-
-a,button,div,p,li,div,.pure-button {
-  font-family: "Microsoft YaHei","Hiragino Sans GB W3",Tahoma,Arial;
-}
-
-form {
-  margin: 5px;
-
 }
 
 img.small-cover {
@@ -41,14 +28,6 @@ img.small-cover {
 li {
   text-decoration: none;
   display: inline-block;
-}
-
-.button-current {
-  color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: #008ed4;
-  font-weight: bold;
 }
 
 div.unit {
