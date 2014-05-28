@@ -79,8 +79,8 @@ V::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # specific config
-  config.video_dir = '/mnt/hgfs/Videos/'
-  config.base_url = 'http://windowsai/videos/'
-  config.admin_web_socket = 'ws://ubuntus:3001/'
+  config.video_dir = '/mnt/ent/Videos/'
+  config.base_url = 'http://localhost/resources/videos/'
+  config.admin_web_socket = 'ws://localhost:3001/'
 
 end
