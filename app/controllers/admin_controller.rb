@@ -82,7 +82,7 @@ class AdminController < ApplicationController
   end
 
   def is_video(name)
-    name.downcase.end_with? '.mp4', '.m4v', '.webm'
+    name.downcase.end_with? '.mp4', '.m4v', '.webm', 'mkv'
   end
 
 
