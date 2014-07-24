@@ -61,7 +61,7 @@ class Video < ActiveRecord::Base
               else
                 ' -i '
               end
-    command = 'avprobe -show_streams ' + options + "\"#{file.encode Encoding.default_external}\""
+    command = 'ffprobe -show_streams ' + options + "\"#{file.encode Encoding.default_external}\""
     data = `#{command}`.split "\n"
     data.each do |s|
       if s.start_with? 'width='
