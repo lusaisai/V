@@ -9,8 +9,6 @@ $(document).on("page:change", function(){
         }
     );
 
-    $("img.lazy").lazyload({
-        effect : "fadeIn"
-    });
+    $('img').hide().fadeIn();
 
 });
