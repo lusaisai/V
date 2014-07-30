@@ -73,9 +73,15 @@
     var video =JVideo[0];
     video.volume = 0.8;
     video.play();
+    JVideo.click(function(e){ // no pause
+        e.preventDefault();
+    });
 
     JOverlay.fadeIn('slow');
     JOverlay.click(removePlayer);
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) removePlayer();
+    });
 
 
 })();

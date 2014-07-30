@@ -13,5 +13,4 @@ $(document).on("page:change", function(){
         effect : "fadeIn"
     });
 
-
 });
