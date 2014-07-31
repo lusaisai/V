@@ -58,6 +58,14 @@ div.info {
   position: fixed !important;
   z-index: 15;
   display: none;
+  #notifications {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: honeydew;
+    display: none;
+    font-size: 200%;
+  }
 }
 
 .overlay{

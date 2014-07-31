@@ -4,6 +4,7 @@
      <source src="<%= @video.url %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
      <source src="<%= @video.url %>" type='video/ogg; codecs="theora, vorbis"'/>
   </video>
+  <div id="notifications"></div>
   <div id="subtitler"></div>
   <% if ! @video.group_id.nil? %>
   <%= render 'list' %>
