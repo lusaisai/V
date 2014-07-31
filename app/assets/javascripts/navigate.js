@@ -1,9 +1,7 @@
-$(document).on("ready page:load", function(){
-    $(document).unbind('keydown');
-
+(function(){
     var current = 0;
-    var total = $( "div[data-seq]").length; // total video count
-    var line = Math.floor( $('#video-list').width() / 370 ); // video count in a line
+    var total; // total video count
+    var line; // video count in a line
 
     var moveto_relative = function(offset) {
         if( current == 0 || current + offset < 1 ) {
@@ -36,38 +34,44 @@ $(document).on("ready page:load", function(){
     var right = function(){ moveto_relative(1); };
     var left = function(){ moveto_relative(-1); };
 
-    $(document).keydown(function(e){
+    $(document).keydown(function (e) {
         var video = $('video')[0];
         var code = e.which;
-        if(video) return;
+        if (video) return;
 
         // right arrow
-        if( code == 39 ) {
+        if (code == 39) {
             e.preventDefault();
             right();
         }
         // left arrow
-        if( code == 37 ) {
+        if (code == 37) {
             e.preventDefault();
             left();
         }
         // down arrow
-        if( code == 40 ) {
+        if (code == 40) {
             e.preventDefault();
             down();
         }
         // up arrow
-        if( code == 38 ) {
+        if (code == 38) {
             e.preventDefault();
             up();
         }
 
         // Enter play
-        if( code == 13 ) {
+        if (code == 13) {
             e.preventDefault();
-            $( "div[data-seq=" + current + "] a").trigger('click');
+            $("div[data-seq=" + current + "] a").trigger('click');
         }
 
     });
 
-});
+    $(document).on("ready page:load", function(){
+        current = 0;
+        total = $( "div[data-seq]").length; // total video count
+        line = Math.floor( $('#video-list').width() / 370 ); // video count in a line
+    });
+
+}());
