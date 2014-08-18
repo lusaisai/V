@@ -42,9 +42,10 @@
 
         // right arrow
         var progressStep = 8;
+        var target;
         if( code == 39 ) {
             e.preventDefault();
-            var target = video.currentTime + progressStep;
+            target = video.currentTime + progressStep;
             video.currentTime =  target <= video.duration ? target : video.duration;
             showProgress();
         }
@@ -52,7 +53,7 @@
         // left arrow
         if( code == 37 ) {
             e.preventDefault();
-            var target = video.currentTime - progressStep;
+            target = video.currentTime - progressStep;
             video.currentTime =  target >= 0 ? target : 0;
             showProgress();
         }
@@ -61,7 +62,7 @@
         var volumeStep = 0.05;
         if( code == 38 ) {
             e.preventDefault();
-            var target = video.volume + volumeStep;
+            target = video.volume + volumeStep;
             video.volume =  target <= 1 ? target : 1;
             showVolume();
         }
@@ -69,7 +70,7 @@
         //down arrow
         if(  code == 40 ) {
             e.preventDefault();
-            var target = video.volume - volumeStep;
+            target = video.volume - volumeStep;
             video.volume =  target >= 0 ? target : 0;
             showVolume();
         }

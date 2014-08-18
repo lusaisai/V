@@ -15,7 +15,7 @@ class VideosController < ApplicationController
 
   def subtitle
     @video = Video.find params[:id]
-    send_file File.join( AdminController::ROOT, @video.subtitle_path)
+    send_file File.join( Admin::ROOT, @video.subtitle_path)
   end
 
 

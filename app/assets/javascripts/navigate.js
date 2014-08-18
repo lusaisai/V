@@ -72,7 +72,7 @@
         current = 0;
         total = $( "div[data-seq]").length; // total video count
         line = Math.floor( $('#video-list').width() / 370 ); // video count in a line
-    }
+    };
     $(document).on("ready page:load ", calc);
     $( window ).resize(calc);
 

@@ -7,7 +7,7 @@ module VideosHelper
     elsif video.group && video.group.image_url
       video.group.image_url
     else
-      "/assets/cover.jpg"
+      '/assets/cover.jpg'
     end
   end
 

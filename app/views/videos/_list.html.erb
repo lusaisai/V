@@ -8,10 +8,11 @@
   <% end %>
 </div>
 <script>
-  $('.playlist').animate({opacity: 0},1000, function(){
+  var JPlaylist = $('.playlist');
+  JPlaylist.animate({opacity: 0},1000, function(){
       document.getElementById(<%= @video.id %>).scrollIntoView();
   });
-  $('.playlist').hover(
+  JPlaylist.hover(
           function(){$('.playlist').animate({opacity: 0.8},800);},
           function(){$('.playlist').animate({opacity: 0},800);}
   );

@@ -16,6 +16,7 @@ class Video < ActiveRecord::Base
     begin
       next_video = it_videos.next
     rescue
+      # ignored
     end
     next_video
   end
@@ -91,6 +92,7 @@ class Video < ActiveRecord::Base
         srt_file.write start_time + ' --> ' + end_time + "\n"
         srt_file.write text + "\n"
         rescue
+          # ignored
         end
       end
       index += 1

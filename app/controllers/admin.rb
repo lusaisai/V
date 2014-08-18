@@ -1,12 +1,10 @@
-require 'timeout'
-
 class Admin
   ROOT = Rails.application.config.video_dir
   FULL_MODE = 0
   NEW_MODE = 1
 
   def self.scan(mode)
-    puts "Start processing ..."
+    puts 'Start processing ...'
     Dir.chdir ROOT
     Dir.entries('.').each do |base_dir|
       next if base_dir == '.' || base_dir == '..'
@@ -39,7 +37,7 @@ class Admin
       end
     end
 
-    puts "Cleaning up ..."
+    puts 'Cleaning up ...'
     Video.all.each do |v|
       v.delete unless File.exist? File.join ROOT, v.path
     end
@@ -50,7 +48,7 @@ class Admin
       c.delete unless Dir.exist? File.join ROOT, c.name
     end
 
-    puts "End processing ..."
+    puts 'End processing ...'
   end
 
   def self.save_video( path, category, group, mode )
