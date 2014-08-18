@@ -1,4 +1,3 @@
-require 'uri'
 class Video < ActiveRecord::Base
   has_and_belongs_to_many :categories
   belongs_to :group
@@ -18,7 +17,7 @@ class Video < ActiveRecord::Base
       next_video = it_videos.next
     rescue
     end
-    return next_video
+    next_video
   end
 
   def image_path
@@ -56,12 +55,11 @@ class Video < ActiveRecord::Base
   def set_width_height
     self.width= 1280 #default values
     self.height= 720
-    options = if `uname`.chop == 'Linux'
-                ''
+    command = if RUBY_PLATFORM.include? 'mingw'
+                '"C:\Program Files (x86)\ffmpeg\bin\ffprobe.exe" -show_streams -i ' + "\"#{file.encode('cp936')}\"" # chinese code page
               else
-                ' -i '
+                'ffprobe -show_streams ' + file
               end
-    command = 'ffprobe -show_streams ' + options + "\"#{file.encode Encoding.default_external}\""
     data = `#{command}`.split "\n"
     data.each do |s|
       if s.start_with? 'width='
@@ -92,7 +90,7 @@ class Video < ActiveRecord::Base
         srt_file.write index.to_s + "\n"
         srt_file.write start_time + ' --> ' + end_time + "\n"
         srt_file.write text + "\n"
-        rescue Exception
+        rescue
         end
       end
       index += 1

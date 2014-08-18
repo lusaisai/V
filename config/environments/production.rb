@@ -79,8 +79,7 @@ V::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # specific config
-  config.video_dir = '/mnt/ent/Videos/'
-  config.base_url = 'http://mint/resources/videos/'
-  config.admin_web_socket = 'ws://mint:3001/'
+  config.video_dir = 'D:/Videos/'
+  config.base_url = 'http://localhost:8000/videos/'
 
 end
