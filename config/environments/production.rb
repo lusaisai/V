@@ -80,6 +80,6 @@ V::Application.configure do
 
   # specific config
   config.video_dir = 'D:/Videos/'
-  config.base_url = 'http://localhost:8000/videos/'
+  config.base_url = 'http://localhost/resources/videos/'
 
 end
