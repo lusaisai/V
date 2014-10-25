@@ -5,7 +5,13 @@ class VideosController < ApplicationController
       @video = Video.find params[:id]
       respond_to do |format|
         format.html {}
-        format.js {}
+        format.js {
+          if is_mobile
+            render :js => 'window.location = "' + @video.url + '"'
+          else
+            render
+          end
+        }
       end
     rescue ActiveRecord::RecordNotFound
       redirect_to root_path
@@ -16,6 +22,10 @@ class VideosController < ApplicationController
   def subtitle
     @video = Video.find params[:id]
     send_file File.join( Admin::ROOT, @video.subtitle_path)
+  end
+
+  def is_mobile
+    request.headers[:HTTP_USER_AGENT].downcase.include? 'mobile'
   end
 
 

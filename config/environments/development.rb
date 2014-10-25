@@ -29,6 +29,6 @@ V::Application.configure do
 
   # specific config
   config.video_dir = 'D:/Videos/'
-  config.base_url = 'http://localhost/resources/videos/'
+  config.base_url = 'http://192.168.7.41/resources/videos/'
 
 end
