@@ -4,10 +4,9 @@ class VideosController < ApplicationController
     begin
       @video = Video.find params[:id]
       respond_to do |format|
-        format.html {}
         format.js {
           if is_mobile
-            render :js => 'window.location = "' + @video.url + '"'
+            render inline: 'window.location = "' + @video.url + '"'
           else
             render
           end
