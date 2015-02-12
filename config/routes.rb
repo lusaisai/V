@@ -1,4 +1,10 @@
 V::Application.routes.draw do
+  get 'login' => 'session#new'
+  post 'login' => 'session#create'
+  delete 'logout' => 'session#destroy'
+
+  resources :users, only: [:create, :new, :show]
+
   root to: 'home#index'
   get "home/index"
   resources :videos

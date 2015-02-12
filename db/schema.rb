@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140405035117) do
+ActiveRecord::Schema.define(version: 20150211220857) do
 
-  create_table "categories", force: true do |t|
+  create_table "categories", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "categories_videos", id: false, force: true do |t|
+  create_table "categories_videos", id: false, force: :cascade do |t|
     t.integer "category_id", null: false
     t.integer "video_id",    null: false
   end
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20140405035117) do
   add_index "categories_videos", ["category_id"], name: "index_categories_videos_on_category_id"
   add_index "categories_videos", ["video_id"], name: "index_categories_videos_on_video_id"
 
-  create_table "groups", force: true do |t|
+  create_table "groups", force: :cascade do |t|
     t.string   "name"
     t.boolean  "with_image"
     t.string   "path"
@@ -35,7 +35,14 @@ ActiveRecord::Schema.define(version: 20140405035117) do
     t.datetime "updated_at"
   end
 
-  create_table "videos", force: true do |t|
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "videos", force: :cascade do |t|
     t.string   "name"
     t.boolean  "with_image"
     t.boolean  "with_subtitle"

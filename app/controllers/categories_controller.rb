@@ -8,5 +8,6 @@ class CategoriesController < ApplicationController
     end
     @videos.shuffle!
     @categories = Category.all
+    @user = User.find_by_id session[:user_id]
   end
 end

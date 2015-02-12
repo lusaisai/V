@@ -20,7 +20,7 @@ V::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = true
+  config.serve_static_files = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -79,7 +79,7 @@ V::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # specific config
-  config.video_dir = 'D:/Videos/'
+  config.video_dir = '/mnt/ent/Videos/'
   config.base_url = 'http://localhost/resources/videos/'
 
 end

@@ -7,5 +7,6 @@ class HomeController < ApplicationController
     @videos.shuffle!
     @categories = Category.all
     @category_id = 0
+    @user = User.find_by_id session[:user_id]
   end
 end

@@ -59,7 +59,7 @@ class Video < ActiveRecord::Base
     command = if RUBY_PLATFORM.include? 'mingw'
                 '"C:\Program Files (x86)\ffmpeg\bin\ffprobe.exe" -show_streams -i ' + "\"#{file.encode('cp936')}\"" # chinese code page
               else
-                'ffprobe -show_streams ' + file
+                "ffprobe -show_streams \"#{file}\""
               end
     data = `#{command}`.split "\n"
     data.each do |s|

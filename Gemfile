@@ -16,7 +16,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -34,8 +34,10 @@ end
 
 gem 'tzinfo-data'
 
+gem 'pry-rails', :group => :development
+
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt'
 
 # Use unicorn as the app server
 # gem 'unicorn'
