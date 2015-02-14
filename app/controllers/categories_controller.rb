@@ -1,12 +1,24 @@
 class CategoriesController < ApplicationController
+  skip_before_action :authorize
+
   def show
     @category_id = params[:id]
-    @videos = Category.find(@category_id).videos.where( group_id: nil ).to_a
-    Group.all.each do |group|
-      video = group.videos.order('random()').take
-      @videos << video if video.category_ids.include? @category_id.to_i
-    end
-    @videos.shuffle!
+    @videos = []
+
+    group_chosen = {}
+    Category.find(@category_id).videos.to_a.shuffle!.each { |video|
+      if video.group_id == nil
+        @videos << video
+      else
+        if group_chosen.has_key? video.group_id
+          next
+        else
+          @videos << video
+          group_chosen[video.group_id] = true
+        end
+      end
+    }
+
     @categories = Category.all
     @user = User.find_by_id session[:user_id]
   end

@@ -1,4 +1,5 @@
 class VideosController < ApplicationController
+  skip_before_action :authorize
 
   def show
     begin

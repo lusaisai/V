@@ -8,7 +8,11 @@
             <% class_names = (@category_id.to_i == category.id ? 'pure-button lss-button lss-button-blue' : 'pure-button lss-button lss-button-default')  %>
             <li> <%= link_to button_tag(type: 'button', class: class_names) {category.name}, category %> </li>
         <% end %>
-        <%= link_to button_tag(type: 'button', class: 'user pure-button lss-button lss-button-green') {@user.name}, user_path(@user.id) %>
+        <% if @user %>
+            <%= link_to button_tag(type: 'button', class: 'user pure-button lss-button lss-button-green') {@user.name}, user_path(@user.id) %>
+        <% else %>
+            <%= link_to button_tag(type: 'button', class: 'user pure-button lss-button lss-button-green') {'login'}, login_path %>
+        <% end %>
       </ul>
 
     </div>
