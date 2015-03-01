@@ -1,0 +1,23 @@
+<div class="pure-u-1-2">
+  <div class="depot_form">
+    <% if flash[:alert] %>
+        <p id="notice"><%= flash[:alert] %></p>
+    <% end %>
+    <%= form_tag login_url, class: 'pure-form pure-form-aligned' do %>
+        <fieldset>
+          <div class="pure-control-group">
+            <%= label_tag :name, 'Name:' %>
+            <%= text_field_tag :name, params[:name] %>
+          </div>
+          <div class="pure-control-group">
+            <%= label_tag :password, 'Password:' %>
+            <%= password_field_tag :password, params[:password] %>
+          </div>
+          <div class="pure-controls">
+            <%= submit_tag "Login", class: 'pure-button lss-button lss-button-blue' %>
+            <%= link_to button_tag(type: 'button', class: 'pure-button lss-button lss-button-blue') {'Sign Up'}, new_user_path %>
+          </div>
+        </fieldset>
+    <% end %>
+  </div>
+</div>
