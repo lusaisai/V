@@ -79,7 +79,7 @@ V::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # specific config
-  config.video_dir = '/mnt/ent/Videos/'
-  config.base_url = 'http://localhost/resources/videos/'
+  config.video_dir = '/usr/share/nginx/html/resources/videos'
+  config.base_url = 'http://im633.com:8080/resources/videos/'
 
 end
