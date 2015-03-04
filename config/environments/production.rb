@@ -80,6 +80,6 @@ V::Application.configure do
 
   # specific config
   config.video_dir = '/usr/share/nginx/html/resources/videos/'
-  config.base_url = 'http://im633.com:8080/resources/videos/'
+  config.base_url = 'http://im633.com:8000/resources/videos/'
 
 end
