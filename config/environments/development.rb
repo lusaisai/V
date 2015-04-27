@@ -28,7 +28,7 @@ V::Application.configure do
   config.assets.debug = true
 
   # specific config
-  config.video_dir = 'D:/Videos/'
+  config.video_dir = 'E:/Videos/'
   config.base_url = 'http://localhost/resources/videos/'
 
 end

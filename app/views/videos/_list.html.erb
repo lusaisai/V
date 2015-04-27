@@ -9,9 +9,7 @@
 </div>
 <script>
   var JPlaylist = $('.playlist');
-  JPlaylist.animate({opacity: 0},1000, function(){
-      document.getElementById(<%= @video.id %>).scrollIntoView();
-  });
+  JPlaylist.animate({opacity: 0}, 1000);
   JPlaylist.hover(
           function(){$('.playlist').animate({opacity: 0.8},800);},
           function(){$('.playlist').animate({opacity: 0},800);}
