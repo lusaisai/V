@@ -57,7 +57,7 @@ class Video < ActiveRecord::Base
     self.width= 1280 #default values
     self.height= 720
     command = if RUBY_PLATFORM.include? 'mingw'
-                '"C:\Program Files (x86)\ffmpeg\bin\ffprobe.exe" -show_streams -i ' + "\"#{file.encode('cp936')}\"" # chinese code page
+                '"C:\Program Files\ffmpeg\bin\ffprobe.exe" -show_streams -i ' + "\"#{file.encode('cp936')}\"" # chinese code page
               else
                 "ffprobe -show_streams \"#{file}\""
               end
